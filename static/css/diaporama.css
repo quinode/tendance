@@ -1,0 +1,145 @@
+/* @override http://localhost:8000/static/css/diaporama.css */
+
+#diaporama{  
+    width:700px;  
+    position:relative;  
+    background:#fff;
+height: 420px;} 
+
+    #diaporama ul.ui-tabs-nav{  
+        list-style:none;  
+        width:130px;  
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		}
+
+#collections{
+overflow: visible;
+	margin-top: 60px;
+}
+
+#collections li{
+
+/*border: 1px #000000 solid;*/
+width: 167px;
+z-index: 1000;
+
+}
+
+ #diaporama li.ui-tabs-nav-item a:hover{
+	text-decoration: underline;
+}
+
+
+    #diaporama ul.ui-tabs-nav li a{  
+    	padding: 8px;
+		font-weight: bold;
+        font-size: 16px;  
+    }  
+
+
+/* Le Cadre */
+
+	#cadrediapo{
+background-image: url(/static/images/ombrediapo.png);
+margin-left: 150px;
+background-repeat: no-repeat;}
+
+    #diaporama .ui-tabs-panel{  
+    
+        width:540px; 
+        height:380px;  
+        position:relative;  
+        overflow:hidden;
+margin-top: 10px;
+}  
+    
+    
+    
+    #diaporama .ui-tabs-hide{  
+        display:none;  
+    }  
+    
+    #diaporama li.ui-tabs-nav-item a{/*On Hover Style*/  
+    display:block;  
+    color:#333;
+    outline:none;
+	text-decoration: none;
+}  
+
+
+#diaporama li.ui-tabs-nav-item a:hover{  
+/* ici : style quand on survole le lien */
+ 
+}  
+#diaporama li.ui-tabs-selected{ 
+/* element LI qui entoure le lien sélectionné */
+
+}  
+
+
+#diaporama ul.ui-tabs-nav li.ui-tabs-selected a{  
+
+     background-image: url(/static/images/fleche_grise.png);
+	background-position:right;
+color: #ffffff;
+
+
+} 
+
+
+
+/*
+    #diaporama .ui-tabs-panel .info{  
+        position:absolute;  
+        top: 20px;  
+        height:280px; width: 150px;  
+        background: url('images/bandeaublanc.png');
+left: 50px;}  
+*/
+
+
+    #diaporama .ui-tabs-panel .info{  
+        position:absolute;
+height: 70px;
+left: 20px;
+width: 500px;
+bottom: 20px;
+background-image: url(/static/images/blanc50.png);}  
+
+    
+     #diaporama .ui-tabs-panel img{
+width: 500px;
+height: 340px;
+margin-top: 20px;
+margin-left: 20px;}
+    
+    #diaporama .info h2{
+    margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+    }
+    
+    #diaporama .info h2 a{  
+        font-size:18px;
+        color: #bc0c26; 
+        overflow:hidden;
+		font-family: Arial, Helvetica, sans-serif;
+}  
+    
+    #diaporama .info p{  
+        margin: 5px 5px 10px 5px; 
+        font-size:11px;  
+        line-height:15px; 
+    }  
+    #diaporama .info a{  
+        text-decoration:none;  
+        color: #454545;
+		font-weight: bold;}  
+		
+		
+    #diaporama .info a:hover{  
+        text-decoration:underline;  
+    }  

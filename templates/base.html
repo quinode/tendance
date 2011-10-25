@@ -1,0 +1,183 @@
+{% load i18n satchmo_category satchmo_google satchmo_util app_plugins normalize_decimal %}
+{% block doctype %}<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% endblock %}
+<head>
+    {% block extra-head %}{% endblock %}
+    {% block stylesheet %}
+        <link rel="stylesheet" href="{{ media_url }}css/style.css" />
+        <link rel="stylesheet" href="{{ media_url }}css/reset.css" type="text/css" />
+        <link rel="stylesheet" href="{{ media_url }}css/960.css" type="text/css" />
+        <link rel="stylesheet" href="{{ media_url }}css/font.css" type="text/css" />
+        <link rel="stylesheet" href="{{ media_url }}css/style.css" type="text/css" />
+        <link rel="stylesheet" href="{{ media_url }}css/diaporama.css" type="text/css" />
+    {% endblock %}
+    <title>{% block title %}Base{% endblock %} - {{ shop_name }}</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    
+    {% plugin_point "page_head" %}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"></script>
+    {% block javascript %}
+    {% endblock %}
+</head>
+<body>
+<div id="entete" class="container_12">
+    <h1>Meubles de jardin</h1>
+    <span id="mobilier" class="slogan">mobilier</span>
+    <span id="int-ext" class="slogan">extérieur intérieur</span>
+    <img alt="logo" id="logo" src="{{ media_url }}images/logo.png" />
+
+    <div id="menubar">
+
+
+    <a href="/" id="lien_collections">
+        <img src="{{ media_url }}images/icone-maison.png"> Collections
+    </a>
+
+    <ul id="navigation">
+        <li><a href="/categorie/articles/parasol/"><img src="{{ media_url }}images/icone1.png"> Parasol</a></li>
+        <li><a href="/categorie/articles/bain-de-soleil/"><img src="{{ media_url }}images/icone2.png"> Bain de soleil</a></li>
+        <li><a href="/categorie/articles/fauteuil/"><img src="{{ media_url }}images/icone3.png"> Fauteuil</a></li>
+        <li><a href="/categorie/articles/chaise/"><img src="{{ media_url }}images/icone4.png"> Chaise</a></li>
+        <li><a href="/categorie/articles/table/"><img src="{{ media_url }}images/icone5.png"> Table</a></li>
+        <li><a href="/categorie/articles/canape/"><img src="{{ media_url }}images/icone6.png"> Canapé</a></li>
+        <li><a href="/categorie/articles/chambre/"><img src="{{ media_url }}images/icone7.png"> Chambre</a></li>
+        <li><a href="/categorie/articles/rangement/"><img src="{{ media_url }}images/icone8.png"> Rangement</a></li>
+    </ul>
+
+
+    </div>
+
+</div>
+
+
+
+
+ <div class="container_12">
+    <div id="page">
+
+{% block content %}
+
+{% block navbar %}
+{% endblock %}
+
+<!--contenu-->
+
+{% endblock %}
+{% block colonne %}
+
+    <div  class="grid_3 blanc">
+
+        <div id="colonne">
+        
+
+        </div>
+
+    </div>
+
+{% endblock %}
+
+
+    </div>
+
+
+
+    <div class="clear"></div>
+
+    <div id="footer">
+        {% block footer %}
+        <div class="grid_2 prefix_1">
+            <img src="{{ media_url }}images/logo_gris.jpg" alt="Tendance Garden"/>
+        </div>
+        
+        <div class="footlinks grid_2">
+            <h3>INDOOR /INTERIEUR</h3>
+            <h4>Collections</h4>
+            <ul>    <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+
+            <h4>Meubles</h4>
+            <ul><li>Canapé</li>
+                <li>Chambre</li>
+                <li>Fauteuil</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+        </div>
+
+
+        <div class="footlinks grid_2">
+            <h3>OUTDOOR /EXTERIEUR</h3>
+            <h4>Collections</h4>
+            <ul>    <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+
+            <h4>Meubles</h4>
+            <ul><li>Canapé</li>
+                <li>Chambre</li>
+                <li>Fauteuil</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+        </div>
+
+        <div class="footlinks grid_2">
+            <h3>TOUS LES MEUBLES</h3>
+
+            <ul>    <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Chambre</li>
+                <li>Fauteuil</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+        </div>
+
+        <div class="footlinks grid_2 suffix_1">
+            <h3>FABRICANT</h3>
+
+            <ul>    <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+
+            <h3>MATIERES</h3>
+
+            <ul><li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+                <li>Salon...</li>
+            </ul>
+        </div>
+    
+    {% endblock %}
+
+    </div>
+
+</div>
+
+{% block page-close %}
+{% block google-tracker %}
+{% if shop.options.GOOGLE.ANALYTICS.value %}
+    {% show_tracker is_secure %}
+{% endif %}
+{% endblock %}
+{% endblock %}
+
+</body></html>
