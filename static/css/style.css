@@ -1,0 +1,208 @@
+/* @override http://localhost:8000/static/css/style.css */
+
+body {
+	background-color: #b1b1b1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'JamesFajardoRegular';
+	font-size: 84px;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: #000000  1px 1px 0;
+	height: 93px;
+	border-bottom: 2px #ffffff solid;
+}
+
+span.slogan {
+	position: absolute;
+	z-index: 10;
+	color: #bc0c26;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#mobilier {
+	position: absolute;
+	top: 78px;
+	left: 16px;
+}
+
+#int-ext {
+	position: absolute;
+	top: 78px;
+	left: 89px;
+}
+
+#page h2,
+#page h3 {
+	color: #ff873c;
+	font-size: 4em;
+	font-family: 'JamesFajardoRegular';
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h2.fondgris {
+	background-color: #ccc;
+	background-color: #0769cb;
+}
+
+#page {
+	background-color: #fff;
+	display: inline-block;
+	background-image: url(/static/images/signe_bas.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+#colonne {
+	display: inline-block;
+}
+
+#attente {
+	padding: 20px;
+}
+
+#attente h3 {
+	font-size: 48px;
+	margin-top: 0;
+}
+
+#attente p {
+	margin-bottom: 10px;
+}
+
+#entete {
+	background-image: url(/static/images/fond_indoor.jpg);
+	background-repeat: no-repeat;
+	height: 175px;
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+#menubar {
+	height: 80px;
+	background-color: #bc0c26;
+	background-image: url(/static/images/bandeau_vert.png);
+	background-repeat: repeat-x;
+	position: relative;
+}
+
+#navbar {
+	font-weight: bold;
+	font-size: 12px;
+	color: #afa391;
+	margin-top: 10px;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar li:before{
+	content: "> ";
+}
+
+#navbar a{
+	text-decoration: none;
+	color: #6e9fce;
+}
+
+#navbar a:hover{
+	color: #1923da;
+	text-decoration: underline;
+}
+
+#lien_collections img {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	bottom: 6px;
+}
+
+#lien_collections {
+	display: inline-block;
+	width: 200px;
+	float: left;
+	font-family: 'JamesFajardoRegular';
+	font-size: 40px;
+	text-decoration: none;
+	color: #ffffff;
+	background-repeat: no-repeat;
+	margin-top: 24px;
+	margin-left: 40px;
+}
+
+#navigation {
+	position: absolute;
+	top: 7px;
+	right: 10px;
+}
+
+#navigation li {
+	float: left;
+	width: 86px;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+}
+
+#navigation img {
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 3px;
+}
+
+#navigation a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#footer {
+	display: inline-block;
+	background-color: #e3e4e4;
+	color: #707173;
+	background-image: url(/static/images/feuilles_grises.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 12px;
+}
+
+
+#footer a:visited:before {
+   content:  "\2713 ";
+}
+
+.footlinks > h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.footlinks > h4 {
+	font-family: 'JamesFajardoRegular';
+	font-size: 26px;
+}
+
+.footlinks > ul {
+	margin-bottom: 5px;
+}
