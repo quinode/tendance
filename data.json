@@ -1,0 +1,4327 @@
+[
+    {
+        "pk": 1, 
+        "model": "menu.bookmark", 
+        "fields": {
+            "url": "/admin/product/category/", 
+            "user": 1, 
+            "title": "Cat\u00e9gories"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "menu.bookmark", 
+        "fields": {
+            "url": "/admin/product/product/", 
+            "user": 1, 
+            "title": "Produits"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "dashboard.dashboardpreferences", 
+        "fields": {
+            "data": "{\"positions\":{},\"columns\":{},\"disabled\":{\"module_5\":true,\"module_3\":true},\"collapsed\":{\"module_2\":false}}", 
+            "user": 1
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "sites.site", 
+        "fields": {
+            "domain": "localhost:8000", 
+            "name": "Tendance Garden"
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "addressbook", 
+            "name": "Address Book", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "adminarea", 
+            "name": "Administrative Area", 
+            "app_label": "l10n"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "cartitem", 
+            "name": "Cart Item", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "cartitemdetails", 
+            "name": "Cart Item Detail", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "category", 
+            "name": "Category", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categoryattribute", 
+            "name": "Category Attribute", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categoryimage", 
+            "name": "Category Image", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categoryimagetranslation", 
+            "name": "Category Image Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "categorytranslation", 
+            "name": "Category Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "configurableproduct", 
+            "name": "Configurable Product", 
+            "app_label": "configurable"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contact", 
+            "name": "Contact", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contactorganization", 
+            "name": "Contact organization type", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "country", 
+            "name": "Country", 
+            "app_label": "l10n"
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "customproduct", 
+            "name": "Custom Product", 
+            "app_label": "custom"
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "customtextfieldtranslation", 
+            "name": "CustomTextField Translation", 
+            "app_label": "custom"
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "discount", 
+            "name": "Discount", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "interaction", 
+            "name": "Interaction", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "optiongroup", 
+            "name": "Option Group", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "optiongrouptranslation", 
+            "name": "Option Group Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "option", 
+            "name": "Option Item", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "optiontranslation", 
+            "name": "Option Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderitemdetail", 
+            "name": "Order Item Detail", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderitem", 
+            "name": "Order Line Item", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderpayment", 
+            "name": "Order Payment", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderauthorization", 
+            "name": "Order Payment Authorization", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderpendingpayment", 
+            "name": "Order Pending Payment", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderstatus", 
+            "name": "Order Status", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "ordertaxdetail", 
+            "name": "Order tax detail", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "ordervariable", 
+            "name": "Order variable", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "organization", 
+            "name": "Organization", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "phonenumber", 
+            "name": "Phone Number", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "price", 
+            "name": "Price", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "product", 
+            "name": "Product", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productattribute", 
+            "name": "Product Attribute", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productimage", 
+            "name": "Product Image", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productimagetranslation", 
+            "name": "Product Image Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "order", 
+            "name": "Product Order", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "producttranslation", 
+            "name": "Product Translation", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productvariation", 
+            "name": "Product variation", 
+            "app_label": "configurable"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "cart", 
+            "name": "Shopping Cart", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "config", 
+            "name": "Store Configuration", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "taxclass", 
+            "name": "Tax Class", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "attributeoption", 
+            "name": "attribute option", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "bookmark", 
+            "name": "bookmark", 
+            "app_label": "menu"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "comment", 
+            "name": "comment", 
+            "app_label": "comments"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "commentflag", 
+            "name": "comment flag", 
+            "app_label": "comments"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contactinteractiontype", 
+            "name": "contact interaction type", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contactorganizationrole", 
+            "name": "contact organization role", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contactrole", 
+            "name": "contact role", 
+            "app_label": "contact"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "contenttype", 
+            "name": "content type", 
+            "app_label": "contenttypes"
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "customtextfield", 
+            "name": "custom text field", 
+            "app_label": "custom"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "dashboardpreferences", 
+            "name": "dashboard preferences", 
+            "app_label": "dashboard"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "group", 
+            "name": "group", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "logentry", 
+            "name": "log entry", 
+            "app_label": "admin"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "longsetting", 
+            "name": "long setting", 
+            "app_label": "livesettings"
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "message", 
+            "name": "message", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "orderpaymentfailure", 
+            "name": "order payment failure", 
+            "app_label": "shop"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "permission", 
+            "name": "permission", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "plugin", 
+            "name": "plugin", 
+            "app_label": "app_plugins"
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "pluginpoint", 
+            "name": "plugin point", 
+            "app_label": "app_plugins"
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "productpricelookup", 
+            "name": "product price lookup", 
+            "app_label": "product"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "registrationprofile", 
+            "name": "registration profile", 
+            "app_label": "registration"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "session", 
+            "name": "session", 
+            "app_label": "sessions"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "setting", 
+            "name": "setting", 
+            "app_label": "livesettings"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "site", 
+            "name": "site", 
+            "app_label": "sites"
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "user", 
+            "name": "user", 
+            "app_label": "auth"
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "contenttypes.contenttype", 
+        "fields": {
+            "model": "userpluginpreference", 
+            "name": "user plugin preference", 
+            "app_label": "app_plugins"
+        }
+    }, 
+    {
+        "pk": "c8575566a57af0fe974f37a6f88a1240", 
+        "model": "sessions.session", 
+        "fields": {
+            "expire_date": "2011-11-08 10:50:22", 
+            "session_data": "ZmViYjY0YmQ2OWY4YWRmZmFlNzliNGY3YzQzZmJhZjdmYjQyYzUwYjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "livesettings.setting", 
+        "fields": {
+            "value": "False", 
+            "group": "SHOP", 
+            "site": 1, 
+            "key": "SHOW_SITE"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "livesettings.setting", 
+        "fields": {
+            "value": "[\"email\", \"first_name\", \"last_name\", \"phone\", \"street1\", \"city\", \"postal_code\", \"country\"]", 
+            "group": "SHOP", 
+            "site": 1, 
+            "key": "REQUIRED_BILLING_DATA"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "livesettings.setting", 
+        "fields": {
+            "value": "[\"addressee\", \"street1\", \"city\", \"postal_code\", \"country\"]", 
+            "group": "SHOP", 
+            "site": 1, 
+            "key": "REQUIRED_SHIPPING_DATA"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "livesettings.setting", 
+        "fields": {
+            "value": "photos", 
+            "group": "PRODUCT", 
+            "site": 1, 
+            "key": "IMAGE_DIR"
+        }
+    }, 
+    {
+        "pk": "Customer", 
+        "model": "contact.contactrole", 
+        "fields": {
+            "name": "Customer"
+        }
+    }, 
+    {
+        "pk": "Supplier", 
+        "model": "contact.contactrole", 
+        "fields": {
+            "name": "Supplier"
+        }
+    }, 
+    {
+        "pk": "Distributor", 
+        "model": "contact.contactrole", 
+        "fields": {
+            "name": "Distributor"
+        }
+    }, 
+    {
+        "pk": "Company", 
+        "model": "contact.contactorganization", 
+        "fields": {
+            "name": "Company"
+        }
+    }, 
+    {
+        "pk": "Government", 
+        "model": "contact.contactorganization", 
+        "fields": {
+            "name": "Government"
+        }
+    }, 
+    {
+        "pk": "Non-profit", 
+        "model": "contact.contactorganization", 
+        "fields": {
+            "name": "Non-profit"
+        }
+    }, 
+    {
+        "pk": "Supplier", 
+        "model": "contact.contactorganizationrole", 
+        "fields": {
+            "name": "Supplier"
+        }
+    }, 
+    {
+        "pk": "Distributor", 
+        "model": "contact.contactorganizationrole", 
+        "fields": {
+            "name": "Distributor"
+        }
+    }, 
+    {
+        "pk": "Manufacturer", 
+        "model": "contact.contactorganizationrole", 
+        "fields": {
+            "name": "Manufacturer"
+        }
+    }, 
+    {
+        "pk": "Customer", 
+        "model": "contact.contactorganizationrole", 
+        "fields": {
+            "name": "Customer"
+        }
+    }, 
+    {
+        "pk": "Email", 
+        "model": "contact.contactinteractiontype", 
+        "fields": {
+            "name": "Email"
+        }
+    }, 
+    {
+        "pk": "Phone", 
+        "model": "contact.contactinteractiontype", 
+        "fields": {
+            "name": "Phone"
+        }
+    }, 
+    {
+        "pk": "In Person", 
+        "model": "contact.contactinteractiontype", 
+        "fields": {
+            "name": "In Person"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Kooboo gris", 
+            "parent": 9, 
+            "ordering": 1, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Kooboo gris", 
+            "slug": "kooboo-gris", 
+            "name": "Kooboo gris"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Maxi Weave est une collection plutot cool", 
+            "parent": 9, 
+            "ordering": 2, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Maxi Weave", 
+            "slug": "maxi-weave", 
+            "name": "Maxi Weave"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Rotin", 
+            "parent": 9, 
+            "ordering": 3, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Rotin", 
+            "slug": "rotin", 
+            "name": "Rotin"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Loom", 
+            "parent": 9, 
+            "ordering": 4, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Loom", 
+            "slug": "loom", 
+            "name": "Loom"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Les essentiels", 
+            "parent": 9, 
+            "ordering": 5, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Les essentiels", 
+            "slug": "les-essentiels", 
+            "name": "Les essentiels"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Acier", 
+            "parent": 10, 
+            "ordering": 1, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Acier", 
+            "slug": "acier", 
+            "name": "Acier"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "product.category", 
+        "fields": {
+            "description": "R\u00e9sine", 
+            "parent": 10, 
+            "ordering": 2, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "R\u00e9sine", 
+            "slug": "resine", 
+            "name": "R\u00e9sine"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Hybride", 
+            "parent": 10, 
+            "ordering": 3, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Hybride", 
+            "slug": "hybride", 
+            "name": "Hybride"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Parasol", 
+            "parent": 11, 
+            "ordering": 1, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                10
+            ], 
+            "meta": "Parasol", 
+            "slug": "parasol", 
+            "name": "Parasol"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Bain de Soleil", 
+            "parent": 11, 
+            "ordering": 2, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                10
+            ], 
+            "meta": "Bain de Soleil", 
+            "slug": "bain-de-soleil", 
+            "name": "Bain de Soleil"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Fauteuil", 
+            "parent": 11, 
+            "ordering": 3, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9, 
+                10
+            ], 
+            "meta": "Fauteuil", 
+            "slug": "fauteuil", 
+            "name": "Fauteuil"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Chaises", 
+            "parent": 11, 
+            "ordering": 4, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9, 
+                10
+            ], 
+            "meta": "Chaises", 
+            "slug": "chaise", 
+            "name": "Chaise"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Table", 
+            "parent": 11, 
+            "ordering": 5, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9, 
+                10
+            ], 
+            "meta": "Table", 
+            "slug": "table", 
+            "name": "Table"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Canap\u00e9", 
+            "parent": 11, 
+            "ordering": 6, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9, 
+                10
+            ], 
+            "meta": "Canap\u00e9", 
+            "slug": "canape", 
+            "name": "Canap\u00e9"
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Chambre", 
+            "parent": 11, 
+            "ordering": 7, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9
+            ], 
+            "meta": "Chambre", 
+            "slug": "chambre", 
+            "name": "Chambre"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Rangement", 
+            "parent": 11, 
+            "ordering": 8, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                9
+            ], 
+            "meta": "Rangement", 
+            "slug": "rangement", 
+            "name": "Rangement"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Collections int\u00e9rieur", 
+            "parent": null, 
+            "ordering": 1, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                14, 
+                15, 
+                16, 
+                17, 
+                18, 
+                19
+            ], 
+            "meta": "Collections int\u00e9rieur", 
+            "slug": "collections-interieur", 
+            "name": "Collections int\u00e9rieur"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Collections ext\u00e9rieur", 
+            "parent": null, 
+            "ordering": 2, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [
+                12, 
+                13, 
+                14, 
+                15, 
+                16, 
+                17
+            ], 
+            "meta": "Collections ext\u00e9rieur", 
+            "slug": "collections-exterieur", 
+            "name": "Collections ext\u00e9rieur"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "product.category", 
+        "fields": {
+            "description": "Articles", 
+            "parent": null, 
+            "ordering": 3, 
+            "is_active": true, 
+            "site": 1, 
+            "related_categories": [], 
+            "meta": "Articles", 
+            "slug": "articles", 
+            "name": "Articles"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.categoryimage", 
+        "fields": {
+            "category": null, 
+            "picture": "images/productimage-picture-default.jpg", 
+            "sort": 0, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "product.categoryimage", 
+        "fields": {
+            "category": 2, 
+            "picture": "photos/categoryimage-picture-maxi-weave-3.jpg", 
+            "sort": 0, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "product.categoryimage", 
+        "fields": {
+            "category": 3, 
+            "picture": "photos/categoryimage-picture-rotin-4.jpg", 
+            "sort": 0, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "product.categoryimage", 
+        "fields": {
+            "category": 4, 
+            "picture": "photos/categoryimage-picture-loom-5.jpg", 
+            "sort": 0, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "product.categoryimage", 
+        "fields": {
+            "category": 1, 
+            "picture": "photos/categoryimage-picture-kooboo-gris-2.jpg", 
+            "sort": 0, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.product", 
+        "fields": {
+            "weight": null, 
+            "site": 1, 
+            "height": null, 
+            "active": true, 
+            "featured": false, 
+            "meta": "", 
+            "total_sold": "0.000000", 
+            "category": [
+                1, 
+                15
+            ], 
+            "sku": "chaise-kooboo-simple", 
+            "taxClass": null, 
+            "ordering": 0, 
+            "height_units": "in", 
+            "width": null, 
+            "related_items": [], 
+            "items_in_stock": "0.000000", 
+            "short_description": "", 
+            "length_units": "in", 
+            "weight_units": "lb", 
+            "description": "Une chaise toute simple", 
+            "taxable": false, 
+            "date_added": "2011-10-25", 
+            "slug": "chaise-kooboo-simple", 
+            "name": "Chaise Kooboo simple", 
+            "also_purchased": [], 
+            "length": null, 
+            "shipclass": "DEFAULT", 
+            "width_units": "in"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "product.attributeoption", 
+        "fields": {
+            "validation": "product.utils.validation_simple", 
+            "sort_order": 1, 
+            "description": "Fabricant", 
+            "error_message": "Entr\u00e9e invalide", 
+            "name": "fabricant"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "product.attributeoption", 
+        "fields": {
+            "validation": "product.utils.validation_simple", 
+            "sort_order": 1, 
+            "description": "Mati\u00e8re", 
+            "error_message": "Entr\u00e9e invalide", 
+            "name": "matiere"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.productattribute", 
+        "fields": {
+            "languagecode": "fr", 
+            "product": 1, 
+            "option": 3, 
+            "value": "Kooboo"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "product.productattribute", 
+        "fields": {
+            "languagecode": "fr", 
+            "product": 1, 
+            "option": 4, 
+            "value": "Osier"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "product.productimage", 
+        "fields": {
+            "sort": 0, 
+            "picture": "photos/productimage-picture-chaise-kooboo-simple-2.jpg", 
+            "product": 1, 
+            "caption": ""
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.productimage", 
+        "fields": {
+            "sort": 1, 
+            "picture": "images/productimage-picture-default.jpg", 
+            "product": null, 
+            "caption": "Photo Not Available"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "product.taxclass", 
+        "fields": {
+            "description": "Default", 
+            "title": "Default"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "product.taxclass", 
+        "fields": {
+            "description": "Shipping", 
+            "title": "Shipping"
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_logentry", 
+            "name": "Can add log entry", 
+            "content_type": [
+                "admin", 
+                "logentry"
+            ]
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_logentry", 
+            "name": "Can change log entry", 
+            "content_type": [
+                "admin", 
+                "logentry"
+            ]
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_logentry", 
+            "name": "Can delete log entry", 
+            "content_type": [
+                "admin", 
+                "logentry"
+            ]
+        }
+    }, 
+    {
+        "pk": 197, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_plugin", 
+            "name": "Can add plugin", 
+            "content_type": [
+                "app_plugins", 
+                "plugin"
+            ]
+        }
+    }, 
+    {
+        "pk": 198, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_plugin", 
+            "name": "Can change plugin", 
+            "content_type": [
+                "app_plugins", 
+                "plugin"
+            ]
+        }
+    }, 
+    {
+        "pk": 199, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_plugin", 
+            "name": "Can delete plugin", 
+            "content_type": [
+                "app_plugins", 
+                "plugin"
+            ]
+        }
+    }, 
+    {
+        "pk": 194, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_pluginpoint", 
+            "name": "Can add plugin point", 
+            "content_type": [
+                "app_plugins", 
+                "pluginpoint"
+            ]
+        }
+    }, 
+    {
+        "pk": 195, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_pluginpoint", 
+            "name": "Can change plugin point", 
+            "content_type": [
+                "app_plugins", 
+                "pluginpoint"
+            ]
+        }
+    }, 
+    {
+        "pk": 196, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_pluginpoint", 
+            "name": "Can delete plugin point", 
+            "content_type": [
+                "app_plugins", 
+                "pluginpoint"
+            ]
+        }
+    }, 
+    {
+        "pk": 200, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_userpluginpreference", 
+            "name": "Can add user plugin preference", 
+            "content_type": [
+                "app_plugins", 
+                "userpluginpreference"
+            ]
+        }
+    }, 
+    {
+        "pk": 201, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_userpluginpreference", 
+            "name": "Can change user plugin preference", 
+            "content_type": [
+                "app_plugins", 
+                "userpluginpreference"
+            ]
+        }
+    }, 
+    {
+        "pk": 202, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_userpluginpreference", 
+            "name": "Can delete user plugin preference", 
+            "content_type": [
+                "app_plugins", 
+                "userpluginpreference"
+            ]
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_group", 
+            "name": "Can add group", 
+            "content_type": [
+                "auth", 
+                "group"
+            ]
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_group", 
+            "name": "Can change group", 
+            "content_type": [
+                "auth", 
+                "group"
+            ]
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_group", 
+            "name": "Can delete group", 
+            "content_type": [
+                "auth", 
+                "group"
+            ]
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_message", 
+            "name": "Can add message", 
+            "content_type": [
+                "auth", 
+                "message"
+            ]
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_message", 
+            "name": "Can change message", 
+            "content_type": [
+                "auth", 
+                "message"
+            ]
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_message", 
+            "name": "Can delete message", 
+            "content_type": [
+                "auth", 
+                "message"
+            ]
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_permission", 
+            "name": "Can add permission", 
+            "content_type": [
+                "auth", 
+                "permission"
+            ]
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_permission", 
+            "name": "Can change permission", 
+            "content_type": [
+                "auth", 
+                "permission"
+            ]
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_permission", 
+            "name": "Can delete permission", 
+            "content_type": [
+                "auth", 
+                "permission"
+            ]
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_user", 
+            "name": "Can add user", 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_user", 
+            "name": "Can change user", 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_user", 
+            "name": "Can delete user", 
+            "content_type": [
+                "auth", 
+                "user"
+            ]
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_comment", 
+            "name": "Can add comment", 
+            "content_type": [
+                "comments", 
+                "comment"
+            ]
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "can_moderate", 
+            "name": "Can moderate comments", 
+            "content_type": [
+                "comments", 
+                "comment"
+            ]
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_comment", 
+            "name": "Can change comment", 
+            "content_type": [
+                "comments", 
+                "comment"
+            ]
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_comment", 
+            "name": "Can delete comment", 
+            "content_type": [
+                "comments", 
+                "comment"
+            ]
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_commentflag", 
+            "name": "Can add comment flag", 
+            "content_type": [
+                "comments", 
+                "commentflag"
+            ]
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_commentflag", 
+            "name": "Can change comment flag", 
+            "content_type": [
+                "comments", 
+                "commentflag"
+            ]
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_commentflag", 
+            "name": "Can delete comment flag", 
+            "content_type": [
+                "comments", 
+                "commentflag"
+            ]
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_configurableproduct", 
+            "name": "Can add Configurable Product", 
+            "content_type": [
+                "configurable", 
+                "configurableproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 180, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_configurableproduct", 
+            "name": "Can change Configurable Product", 
+            "content_type": [
+                "configurable", 
+                "configurableproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 181, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_configurableproduct", 
+            "name": "Can delete Configurable Product", 
+            "content_type": [
+                "configurable", 
+                "configurableproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 182, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productvariation", 
+            "name": "Can add Product variation", 
+            "content_type": [
+                "configurable", 
+                "productvariation"
+            ]
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productvariation", 
+            "name": "Can change Product variation", 
+            "content_type": [
+                "configurable", 
+                "productvariation"
+            ]
+        }
+    }, 
+    {
+        "pk": 184, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productvariation", 
+            "name": "Can delete Product variation", 
+            "content_type": [
+                "configurable", 
+                "productvariation"
+            ]
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_addressbook", 
+            "name": "Can add Address Book", 
+            "content_type": [
+                "contact", 
+                "addressbook"
+            ]
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_addressbook", 
+            "name": "Can change Address Book", 
+            "content_type": [
+                "contact", 
+                "addressbook"
+            ]
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_addressbook", 
+            "name": "Can delete Address Book", 
+            "content_type": [
+                "contact", 
+                "addressbook"
+            ]
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contact", 
+            "name": "Can add Contact", 
+            "content_type": [
+                "contact", 
+                "contact"
+            ]
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contact", 
+            "name": "Can change Contact", 
+            "content_type": [
+                "contact", 
+                "contact"
+            ]
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contact", 
+            "name": "Can delete Contact", 
+            "content_type": [
+                "contact", 
+                "contact"
+            ]
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contactinteractiontype", 
+            "name": "Can add contact interaction type", 
+            "content_type": [
+                "contact", 
+                "contactinteractiontype"
+            ]
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contactinteractiontype", 
+            "name": "Can change contact interaction type", 
+            "content_type": [
+                "contact", 
+                "contactinteractiontype"
+            ]
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contactinteractiontype", 
+            "name": "Can delete contact interaction type", 
+            "content_type": [
+                "contact", 
+                "contactinteractiontype"
+            ]
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contactorganization", 
+            "name": "Can add Contact organization type", 
+            "content_type": [
+                "contact", 
+                "contactorganization"
+            ]
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contactorganization", 
+            "name": "Can change Contact organization type", 
+            "content_type": [
+                "contact", 
+                "contactorganization"
+            ]
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contactorganization", 
+            "name": "Can delete Contact organization type", 
+            "content_type": [
+                "contact", 
+                "contactorganization"
+            ]
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contactorganizationrole", 
+            "name": "Can add contact organization role", 
+            "content_type": [
+                "contact", 
+                "contactorganizationrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contactorganizationrole", 
+            "name": "Can change contact organization role", 
+            "content_type": [
+                "contact", 
+                "contactorganizationrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contactorganizationrole", 
+            "name": "Can delete contact organization role", 
+            "content_type": [
+                "contact", 
+                "contactorganizationrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contactrole", 
+            "name": "Can add contact role", 
+            "content_type": [
+                "contact", 
+                "contactrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contactrole", 
+            "name": "Can change contact role", 
+            "content_type": [
+                "contact", 
+                "contactrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contactrole", 
+            "name": "Can delete contact role", 
+            "content_type": [
+                "contact", 
+                "contactrole"
+            ]
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_interaction", 
+            "name": "Can add Interaction", 
+            "content_type": [
+                "contact", 
+                "interaction"
+            ]
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_interaction", 
+            "name": "Can change Interaction", 
+            "content_type": [
+                "contact", 
+                "interaction"
+            ]
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_interaction", 
+            "name": "Can delete Interaction", 
+            "content_type": [
+                "contact", 
+                "interaction"
+            ]
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_organization", 
+            "name": "Can add Organization", 
+            "content_type": [
+                "contact", 
+                "organization"
+            ]
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_organization", 
+            "name": "Can change Organization", 
+            "content_type": [
+                "contact", 
+                "organization"
+            ]
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_organization", 
+            "name": "Can delete Organization", 
+            "content_type": [
+                "contact", 
+                "organization"
+            ]
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_phonenumber", 
+            "name": "Can add Phone Number", 
+            "content_type": [
+                "contact", 
+                "phonenumber"
+            ]
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_phonenumber", 
+            "name": "Can change Phone Number", 
+            "content_type": [
+                "contact", 
+                "phonenumber"
+            ]
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_phonenumber", 
+            "name": "Can delete Phone Number", 
+            "content_type": [
+                "contact", 
+                "phonenumber"
+            ]
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_contenttype", 
+            "name": "Can add content type", 
+            "content_type": [
+                "contenttypes", 
+                "contenttype"
+            ]
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_contenttype", 
+            "name": "Can change content type", 
+            "content_type": [
+                "contenttypes", 
+                "contenttype"
+            ]
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_contenttype", 
+            "name": "Can delete content type", 
+            "content_type": [
+                "contenttypes", 
+                "contenttype"
+            ]
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_customproduct", 
+            "name": "Can add Custom Product", 
+            "content_type": [
+                "custom", 
+                "customproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 186, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_customproduct", 
+            "name": "Can change Custom Product", 
+            "content_type": [
+                "custom", 
+                "customproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 187, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_customproduct", 
+            "name": "Can delete Custom Product", 
+            "content_type": [
+                "custom", 
+                "customproduct"
+            ]
+        }
+    }, 
+    {
+        "pk": 188, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_customtextfield", 
+            "name": "Can add custom text field", 
+            "content_type": [
+                "custom", 
+                "customtextfield"
+            ]
+        }
+    }, 
+    {
+        "pk": 189, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_customtextfield", 
+            "name": "Can change custom text field", 
+            "content_type": [
+                "custom", 
+                "customtextfield"
+            ]
+        }
+    }, 
+    {
+        "pk": 190, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_customtextfield", 
+            "name": "Can delete custom text field", 
+            "content_type": [
+                "custom", 
+                "customtextfield"
+            ]
+        }
+    }, 
+    {
+        "pk": 191, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_customtextfieldtranslation", 
+            "name": "Can add CustomTextField Translation", 
+            "content_type": [
+                "custom", 
+                "customtextfieldtranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 192, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_customtextfieldtranslation", 
+            "name": "Can change CustomTextField Translation", 
+            "content_type": [
+                "custom", 
+                "customtextfieldtranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 193, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_customtextfieldtranslation", 
+            "name": "Can delete CustomTextField Translation", 
+            "content_type": [
+                "custom", 
+                "customtextfieldtranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_dashboardpreferences", 
+            "name": "Can add dashboard preferences", 
+            "content_type": [
+                "dashboard", 
+                "dashboardpreferences"
+            ]
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_dashboardpreferences", 
+            "name": "Can change dashboard preferences", 
+            "content_type": [
+                "dashboard", 
+                "dashboardpreferences"
+            ]
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_dashboardpreferences", 
+            "name": "Can delete dashboard preferences", 
+            "content_type": [
+                "dashboard", 
+                "dashboardpreferences"
+            ]
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_adminarea", 
+            "name": "Can add Administrative Area", 
+            "content_type": [
+                "l10n", 
+                "adminarea"
+            ]
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_adminarea", 
+            "name": "Can change Administrative Area", 
+            "content_type": [
+                "l10n", 
+                "adminarea"
+            ]
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_adminarea", 
+            "name": "Can delete Administrative Area", 
+            "content_type": [
+                "l10n", 
+                "adminarea"
+            ]
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_country", 
+            "name": "Can add Country", 
+            "content_type": [
+                "l10n", 
+                "country"
+            ]
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_country", 
+            "name": "Can change Country", 
+            "content_type": [
+                "l10n", 
+                "country"
+            ]
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_country", 
+            "name": "Can delete Country", 
+            "content_type": [
+                "l10n", 
+                "country"
+            ]
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_longsetting", 
+            "name": "Can add long setting", 
+            "content_type": [
+                "livesettings", 
+                "longsetting"
+            ]
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_longsetting", 
+            "name": "Can change long setting", 
+            "content_type": [
+                "livesettings", 
+                "longsetting"
+            ]
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_longsetting", 
+            "name": "Can delete long setting", 
+            "content_type": [
+                "livesettings", 
+                "longsetting"
+            ]
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_setting", 
+            "name": "Can add setting", 
+            "content_type": [
+                "livesettings", 
+                "setting"
+            ]
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_setting", 
+            "name": "Can change setting", 
+            "content_type": [
+                "livesettings", 
+                "setting"
+            ]
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_setting", 
+            "name": "Can delete setting", 
+            "content_type": [
+                "livesettings", 
+                "setting"
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_bookmark", 
+            "name": "Can add bookmark", 
+            "content_type": [
+                "menu", 
+                "bookmark"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_bookmark", 
+            "name": "Can change bookmark", 
+            "content_type": [
+                "menu", 
+                "bookmark"
+            ]
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_bookmark", 
+            "name": "Can delete bookmark", 
+            "content_type": [
+                "menu", 
+                "bookmark"
+            ]
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_attributeoption", 
+            "name": "Can add attribute option", 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_attributeoption", 
+            "name": "Can change attribute option", 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_attributeoption", 
+            "name": "Can delete attribute option", 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_category", 
+            "name": "Can add Category", 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_category", 
+            "name": "Can change Category", 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_category", 
+            "name": "Can delete Category", 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_categoryattribute", 
+            "name": "Can add Category Attribute", 
+            "content_type": [
+                "product", 
+                "categoryattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_categoryattribute", 
+            "name": "Can change Category Attribute", 
+            "content_type": [
+                "product", 
+                "categoryattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_categoryattribute", 
+            "name": "Can delete Category Attribute", 
+            "content_type": [
+                "product", 
+                "categoryattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_categoryimage", 
+            "name": "Can add Category Image", 
+            "content_type": [
+                "product", 
+                "categoryimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_categoryimage", 
+            "name": "Can change Category Image", 
+            "content_type": [
+                "product", 
+                "categoryimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_categoryimage", 
+            "name": "Can delete Category Image", 
+            "content_type": [
+                "product", 
+                "categoryimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_categoryimagetranslation", 
+            "name": "Can add Category Image Translation", 
+            "content_type": [
+                "product", 
+                "categoryimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_categoryimagetranslation", 
+            "name": "Can change Category Image Translation", 
+            "content_type": [
+                "product", 
+                "categoryimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_categoryimagetranslation", 
+            "name": "Can delete Category Image Translation", 
+            "content_type": [
+                "product", 
+                "categoryimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_categorytranslation", 
+            "name": "Can add Category Translation", 
+            "content_type": [
+                "product", 
+                "categorytranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_categorytranslation", 
+            "name": "Can change Category Translation", 
+            "content_type": [
+                "product", 
+                "categorytranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_categorytranslation", 
+            "name": "Can delete Category Translation", 
+            "content_type": [
+                "product", 
+                "categorytranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_discount", 
+            "name": "Can add Discount", 
+            "content_type": [
+                "product", 
+                "discount"
+            ]
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_discount", 
+            "name": "Can change Discount", 
+            "content_type": [
+                "product", 
+                "discount"
+            ]
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_discount", 
+            "name": "Can delete Discount", 
+            "content_type": [
+                "product", 
+                "discount"
+            ]
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_option", 
+            "name": "Can add Option Item", 
+            "content_type": [
+                "product", 
+                "option"
+            ]
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_option", 
+            "name": "Can change Option Item", 
+            "content_type": [
+                "product", 
+                "option"
+            ]
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_option", 
+            "name": "Can delete Option Item", 
+            "content_type": [
+                "product", 
+                "option"
+            ]
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_optiongroup", 
+            "name": "Can add Option Group", 
+            "content_type": [
+                "product", 
+                "optiongroup"
+            ]
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_optiongroup", 
+            "name": "Can change Option Group", 
+            "content_type": [
+                "product", 
+                "optiongroup"
+            ]
+        }
+    }, 
+    {
+        "pk": 139, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_optiongroup", 
+            "name": "Can delete Option Group", 
+            "content_type": [
+                "product", 
+                "optiongroup"
+            ]
+        }
+    }, 
+    {
+        "pk": 140, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_optiongrouptranslation", 
+            "name": "Can add Option Group Translation", 
+            "content_type": [
+                "product", 
+                "optiongrouptranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_optiongrouptranslation", 
+            "name": "Can change Option Group Translation", 
+            "content_type": [
+                "product", 
+                "optiongrouptranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_optiongrouptranslation", 
+            "name": "Can delete Option Group Translation", 
+            "content_type": [
+                "product", 
+                "optiongrouptranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_optiontranslation", 
+            "name": "Can add Option Translation", 
+            "content_type": [
+                "product", 
+                "optiontranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 147, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_optiontranslation", 
+            "name": "Can change Option Translation", 
+            "content_type": [
+                "product", 
+                "optiontranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 148, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_optiontranslation", 
+            "name": "Can delete Option Translation", 
+            "content_type": [
+                "product", 
+                "optiontranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_price", 
+            "name": "Can add Price", 
+            "content_type": [
+                "product", 
+                "price"
+            ]
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_price", 
+            "name": "Can change Price", 
+            "content_type": [
+                "product", 
+                "price"
+            ]
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_price", 
+            "name": "Can delete Price", 
+            "content_type": [
+                "product", 
+                "price"
+            ]
+        }
+    }, 
+    {
+        "pk": 149, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_product", 
+            "name": "Can add Product", 
+            "content_type": [
+                "product", 
+                "product"
+            ]
+        }
+    }, 
+    {
+        "pk": 150, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_product", 
+            "name": "Can change Product", 
+            "content_type": [
+                "product", 
+                "product"
+            ]
+        }
+    }, 
+    {
+        "pk": 151, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_product", 
+            "name": "Can delete Product", 
+            "content_type": [
+                "product", 
+                "product"
+            ]
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productattribute", 
+            "name": "Can add Product Attribute", 
+            "content_type": [
+                "product", 
+                "productattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productattribute", 
+            "name": "Can change Product Attribute", 
+            "content_type": [
+                "product", 
+                "productattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productattribute", 
+            "name": "Can delete Product Attribute", 
+            "content_type": [
+                "product", 
+                "productattribute"
+            ]
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productimage", 
+            "name": "Can add Product Image", 
+            "content_type": [
+                "product", 
+                "productimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productimage", 
+            "name": "Can change Product Image", 
+            "content_type": [
+                "product", 
+                "productimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productimage", 
+            "name": "Can delete Product Image", 
+            "content_type": [
+                "product", 
+                "productimage"
+            ]
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productimagetranslation", 
+            "name": "Can add Product Image Translation", 
+            "content_type": [
+                "product", 
+                "productimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productimagetranslation", 
+            "name": "Can change Product Image Translation", 
+            "content_type": [
+                "product", 
+                "productimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productimagetranslation", 
+            "name": "Can delete Product Image Translation", 
+            "content_type": [
+                "product", 
+                "productimagetranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_productpricelookup", 
+            "name": "Can add product price lookup", 
+            "content_type": [
+                "product", 
+                "productpricelookup"
+            ]
+        }
+    }, 
+    {
+        "pk": 156, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_productpricelookup", 
+            "name": "Can change product price lookup", 
+            "content_type": [
+                "product", 
+                "productpricelookup"
+            ]
+        }
+    }, 
+    {
+        "pk": 157, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_productpricelookup", 
+            "name": "Can delete product price lookup", 
+            "content_type": [
+                "product", 
+                "productpricelookup"
+            ]
+        }
+    }, 
+    {
+        "pk": 152, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_producttranslation", 
+            "name": "Can add Product Translation", 
+            "content_type": [
+                "product", 
+                "producttranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 153, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_producttranslation", 
+            "name": "Can change Product Translation", 
+            "content_type": [
+                "product", 
+                "producttranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 154, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_producttranslation", 
+            "name": "Can delete Product Translation", 
+            "content_type": [
+                "product", 
+                "producttranslation"
+            ]
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_taxclass", 
+            "name": "Can add Tax Class", 
+            "content_type": [
+                "product", 
+                "taxclass"
+            ]
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_taxclass", 
+            "name": "Can change Tax Class", 
+            "content_type": [
+                "product", 
+                "taxclass"
+            ]
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_taxclass", 
+            "name": "Can delete Tax Class", 
+            "content_type": [
+                "product", 
+                "taxclass"
+            ]
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_registrationprofile", 
+            "name": "Can add registration profile", 
+            "content_type": [
+                "registration", 
+                "registrationprofile"
+            ]
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_registrationprofile", 
+            "name": "Can change registration profile", 
+            "content_type": [
+                "registration", 
+                "registrationprofile"
+            ]
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_registrationprofile", 
+            "name": "Can delete registration profile", 
+            "content_type": [
+                "registration", 
+                "registrationprofile"
+            ]
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_session", 
+            "name": "Can add session", 
+            "content_type": [
+                "sessions", 
+                "session"
+            ]
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_session", 
+            "name": "Can change session", 
+            "content_type": [
+                "sessions", 
+                "session"
+            ]
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_session", 
+            "name": "Can delete session", 
+            "content_type": [
+                "sessions", 
+                "session"
+            ]
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_cart", 
+            "name": "Can add Shopping Cart", 
+            "content_type": [
+                "shop", 
+                "cart"
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_cart", 
+            "name": "Can change Shopping Cart", 
+            "content_type": [
+                "shop", 
+                "cart"
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_cart", 
+            "name": "Can delete Shopping Cart", 
+            "content_type": [
+                "shop", 
+                "cart"
+            ]
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_cartitem", 
+            "name": "Can add Cart Item", 
+            "content_type": [
+                "shop", 
+                "cartitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_cartitem", 
+            "name": "Can change Cart Item", 
+            "content_type": [
+                "shop", 
+                "cartitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_cartitem", 
+            "name": "Can delete Cart Item", 
+            "content_type": [
+                "shop", 
+                "cartitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_cartitemdetails", 
+            "name": "Can add Cart Item Detail", 
+            "content_type": [
+                "shop", 
+                "cartitemdetails"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_cartitemdetails", 
+            "name": "Can change Cart Item Detail", 
+            "content_type": [
+                "shop", 
+                "cartitemdetails"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_cartitemdetails", 
+            "name": "Can delete Cart Item Detail", 
+            "content_type": [
+                "shop", 
+                "cartitemdetails"
+            ]
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_config", 
+            "name": "Can add Store Configuration", 
+            "content_type": [
+                "shop", 
+                "config"
+            ]
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_config", 
+            "name": "Can change Store Configuration", 
+            "content_type": [
+                "shop", 
+                "config"
+            ]
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_config", 
+            "name": "Can delete Store Configuration", 
+            "content_type": [
+                "shop", 
+                "config"
+            ]
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_order", 
+            "name": "Can add Product Order", 
+            "content_type": [
+                "shop", 
+                "order"
+            ]
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_order", 
+            "name": "Can change Product Order", 
+            "content_type": [
+                "shop", 
+                "order"
+            ]
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_order", 
+            "name": "Can delete Product Order", 
+            "content_type": [
+                "shop", 
+                "order"
+            ]
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderauthorization", 
+            "name": "Can add Order Payment Authorization", 
+            "content_type": [
+                "shop", 
+                "orderauthorization"
+            ]
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderauthorization", 
+            "name": "Can change Order Payment Authorization", 
+            "content_type": [
+                "shop", 
+                "orderauthorization"
+            ]
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderauthorization", 
+            "name": "Can delete Order Payment Authorization", 
+            "content_type": [
+                "shop", 
+                "orderauthorization"
+            ]
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderitem", 
+            "name": "Can add Order Line Item", 
+            "content_type": [
+                "shop", 
+                "orderitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderitem", 
+            "name": "Can change Order Line Item", 
+            "content_type": [
+                "shop", 
+                "orderitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderitem", 
+            "name": "Can delete Order Line Item", 
+            "content_type": [
+                "shop", 
+                "orderitem"
+            ]
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderitemdetail", 
+            "name": "Can add Order Item Detail", 
+            "content_type": [
+                "shop", 
+                "orderitemdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderitemdetail", 
+            "name": "Can change Order Item Detail", 
+            "content_type": [
+                "shop", 
+                "orderitemdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderitemdetail", 
+            "name": "Can delete Order Item Detail", 
+            "content_type": [
+                "shop", 
+                "orderitemdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderpayment", 
+            "name": "Can add Order Payment", 
+            "content_type": [
+                "shop", 
+                "orderpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderpayment", 
+            "name": "Can change Order Payment", 
+            "content_type": [
+                "shop", 
+                "orderpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderpayment", 
+            "name": "Can delete Order Payment", 
+            "content_type": [
+                "shop", 
+                "orderpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderpaymentfailure", 
+            "name": "Can add order payment failure", 
+            "content_type": [
+                "shop", 
+                "orderpaymentfailure"
+            ]
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderpaymentfailure", 
+            "name": "Can change order payment failure", 
+            "content_type": [
+                "shop", 
+                "orderpaymentfailure"
+            ]
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderpaymentfailure", 
+            "name": "Can delete order payment failure", 
+            "content_type": [
+                "shop", 
+                "orderpaymentfailure"
+            ]
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderpendingpayment", 
+            "name": "Can add Order Pending Payment", 
+            "content_type": [
+                "shop", 
+                "orderpendingpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderpendingpayment", 
+            "name": "Can change Order Pending Payment", 
+            "content_type": [
+                "shop", 
+                "orderpendingpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderpendingpayment", 
+            "name": "Can delete Order Pending Payment", 
+            "content_type": [
+                "shop", 
+                "orderpendingpayment"
+            ]
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_orderstatus", 
+            "name": "Can add Order Status", 
+            "content_type": [
+                "shop", 
+                "orderstatus"
+            ]
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_orderstatus", 
+            "name": "Can change Order Status", 
+            "content_type": [
+                "shop", 
+                "orderstatus"
+            ]
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_orderstatus", 
+            "name": "Can delete Order Status", 
+            "content_type": [
+                "shop", 
+                "orderstatus"
+            ]
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_ordertaxdetail", 
+            "name": "Can add Order tax detail", 
+            "content_type": [
+                "shop", 
+                "ordertaxdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_ordertaxdetail", 
+            "name": "Can change Order tax detail", 
+            "content_type": [
+                "shop", 
+                "ordertaxdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_ordertaxdetail", 
+            "name": "Can delete Order tax detail", 
+            "content_type": [
+                "shop", 
+                "ordertaxdetail"
+            ]
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_ordervariable", 
+            "name": "Can add Order variable", 
+            "content_type": [
+                "shop", 
+                "ordervariable"
+            ]
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_ordervariable", 
+            "name": "Can change Order variable", 
+            "content_type": [
+                "shop", 
+                "ordervariable"
+            ]
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_ordervariable", 
+            "name": "Can delete Order variable", 
+            "content_type": [
+                "shop", 
+                "ordervariable"
+            ]
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "add_site", 
+            "name": "Can add site", 
+            "content_type": [
+                "sites", 
+                "site"
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "change_site", 
+            "name": "Can change site", 
+            "content_type": [
+                "sites", 
+                "site"
+            ]
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "auth.permission", 
+        "fields": {
+            "codename": "delete_site", 
+            "name": "Can delete site", 
+            "content_type": [
+                "sites", 
+                "site"
+            ]
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 23:41:30", 
+            "object_repr": "Chaise Kooboo simple", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "product"
+            ]
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 22:08:55", 
+            "object_repr": "Articles :: Chaise", 
+            "object_id": "15", 
+            "change_message": "Modifi\u00e9 name et slug.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 22:06:42", 
+            "object_repr": "Mati\u00e8re", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 22:06:30", 
+            "object_repr": "Fabricant", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2011-10-25 22:06:04", 
+            "object_repr": "Type de cat\u00e9gorie", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 3, 
+            "action_time": "2011-10-25 22:06:04", 
+            "object_repr": "Gamme", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 19:07:43", 
+            "object_repr": "Collections int\u00e9rieur :: Kooboo gris", 
+            "object_id": "1", 
+            "change_message": "picture modifi\u00e9 pour Image de la cat\u00e9gorie \u00ab\u00a0Image of Category kooboo-gris\u00a0\u00bb.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:56:53", 
+            "object_repr": "Articles :: Rangement", 
+            "object_id": "19", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:56:28", 
+            "object_repr": "Articles :: Chambre", 
+            "object_id": "18", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:55:50", 
+            "object_repr": "Articles :: Canap\u00e9", 
+            "object_id": "17", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:55:24", 
+            "object_repr": "Articles :: Table", 
+            "object_id": "16", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 18:54:28", 
+            "object_repr": "Articles :: Fauteuil", 
+            "object_id": "14", 
+            "change_message": "Modifi\u00e9 ordering.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:54:16", 
+            "object_repr": "Articles :: Chaises", 
+            "object_id": "15", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:52:04", 
+            "object_repr": "Articles :: Fauteuil", 
+            "object_id": "14", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:51:37", 
+            "object_repr": "Articles :: Bain de Soleil", 
+            "object_id": "13", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:51:09", 
+            "object_repr": "Articles :: Parasol", 
+            "object_id": "12", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 18:50:12", 
+            "object_repr": "Articles", 
+            "object_id": "11", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:06:10", 
+            "object_repr": "Collections ext\u00e9rieur :: Hybride", 
+            "object_id": "8", 
+            "change_message": "Modifi\u00e9 parent et ordering. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:05:53", 
+            "object_repr": "Collections ext\u00e9rieur :: R\u00e9sine", 
+            "object_id": "7", 
+            "change_message": "Modifi\u00e9 parent et ordering. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:05:33", 
+            "object_repr": "Collections ext\u00e9rieur :: Acier", 
+            "object_id": "6", 
+            "change_message": "Modifi\u00e9 parent et ordering. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:05:12", 
+            "object_repr": "Collections int\u00e9rieur :: Les essentiels", 
+            "object_id": "5", 
+            "change_message": "Modifi\u00e9 parent. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:04:57", 
+            "object_repr": "Collections int\u00e9rieur :: Loom", 
+            "object_id": "4", 
+            "change_message": "Modifi\u00e9 parent. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:04:42", 
+            "object_repr": "Collections int\u00e9rieur :: Rotin", 
+            "object_id": "3", 
+            "change_message": "Modifi\u00e9 parent. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:04:25", 
+            "object_repr": "Collections int\u00e9rieur :: Maxi Weave", 
+            "object_id": "2", 
+            "change_message": "Modifi\u00e9 parent. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 15:03:52", 
+            "object_repr": "Collections int\u00e9rieur :: Kooboo gris", 
+            "object_id": "1", 
+            "change_message": "Modifi\u00e9 parent. Category Attribute \u00ab\u00a0gamme\u00a0\u00bb supprim\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 15:03:21", 
+            "object_repr": "Collections ext\u00e9rieur", 
+            "object_id": "10", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 15:02:59", 
+            "object_repr": "Collections int\u00e9rieur", 
+            "object_id": "9", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:10:53", 
+            "object_repr": "Type de cat\u00e9gorie", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:10:27", 
+            "object_repr": "Hybride", 
+            "object_id": "8", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:09:58", 
+            "object_repr": "R\u00e9sine", 
+            "object_id": "7", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:09:30", 
+            "object_repr": "Acier", 
+            "object_id": "6", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:09:06", 
+            "object_repr": "Les essentiels", 
+            "object_id": "5", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:08:41", 
+            "object_repr": "Loom", 
+            "object_id": "4", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:08:12", 
+            "object_repr": "Rotin", 
+            "object_id": "3", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:07:40", 
+            "object_repr": "Maxi Weave", 
+            "object_id": "2", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 12:06:47", 
+            "object_repr": "Kooboo gris", 
+            "object_id": "1", 
+            "change_message": "Category Attribute \u00ab\u00a0gamme\u00a0\u00bb ajout\u00e9.", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:05:38", 
+            "object_repr": "Gamme", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "attributeoption"
+            ]
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 1, 
+            "action_time": "2011-10-25 12:04:40", 
+            "object_repr": "Kooboo gris", 
+            "object_id": "1", 
+            "change_message": "", 
+            "user": 1, 
+            "content_type": [
+                "product", 
+                "category"
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "admin.logentry", 
+        "fields": {
+            "action_flag": 2, 
+            "action_time": "2011-10-25 10:54:46", 
+            "object_repr": "localhost:8000", 
+            "object_id": "1", 
+            "change_message": "Modifi\u00e9 domain et name.", 
+            "user": 1, 
+            "content_type": [
+                "sites", 
+                "site"
+            ]
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "auth.user", 
+        "fields": {
+            "username": "dom", 
+            "first_name": "", 
+            "last_name": "", 
+            "is_active": true, 
+            "is_superuser": true, 
+            "is_staff": true, 
+            "last_login": "2011-10-25 10:50:22", 
+            "groups": [], 
+            "user_permissions": [], 
+            "password": "sha1$66f04$769ba0c6d58f65eee8f437c56f9e79c75412215b", 
+            "email": "contact@quinode.fr", 
+            "date_joined": "2011-10-24 15:06:35"
+        }
+    }
+]
