@@ -222,17 +222,17 @@ CACHE_PREFIX = "Z"
 
 ACCOUNT_ACTIVATION_DAYS = 7
 
-#Configure logging
-LOGFILE = "satchmo.log"
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
-                    datefmt='%a, %d %b %Y %H:%M:%S',
-                    filename=os.path.join(DIRNAME,LOGFILE),
-                    filemode='w')
-
-logging.getLogger('keyedcache').setLevel(logging.INFO)
-logging.getLogger('l10n').setLevel(logging.INFO)
-logging.info("Satchmo Started")
+# #Configure logging
+# LOGFILE = "satchmo.log"
+# logging.basicConfig(level=logging.DEBUG,
+#                     format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
+#                     datefmt='%a, %d %b %Y %H:%M:%S',
+#                     filename=os.path.join(DIRNAME,LOGFILE),
+#                     filemode='w')
+# 
+# logging.getLogger('keyedcache').setLevel(logging.INFO)
+# logging.getLogger('l10n').setLevel(logging.INFO)
+# logging.info("Satchmo Started")
 
 # Load the local settings
 from local_settings import *
