@@ -25,11 +25,24 @@
 
 <div id="product_category">
 <h3>{{ category.translated_name }}</h3>
-{% if category.translated_description %}<p class="product_category_description">{{ category.translated_description }}</p>{% endif %}
-    {% if category.main_image %}
-            {% thumbnail category.main_image.picture 85x85 as image %}
-           <img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" />
-    {% endif %}
+{% if category.translated_description %}
+    <p class="product_category_description">{{ category.translated_description }}</p>
+{% endif %}
+{% if child_categories %}
+        {% for cat in child_categories %}
+            <div class="grid_2 sous-cat">
+            <h4>{{cat.translated_name}}</h4>
+            {% if cat.translated_description %}
+                <p class="product_category_description">{{ cat.translated_description }}</p>
+            {% endif %}
+            {% thumbnail cat.main_image.picture 85x85 as image %}
+            <a href="{{ cat.get_absolute_url }}">
+                <img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" /></a>               
+            {% endfor %}
+        </div>    
+        {% endfor %}
+{% endif %}
+    
     {% for product in products %} 
         {% if forloop.first %} <ul>  {% endif %}
             <li>{% thumbnail product.main_image.picture 85x85 as image %}
@@ -37,19 +50,9 @@
             <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a></li>
         {% if forloop.last %} </ul> {% endif %}
     {% endfor %}
-{% if child_categories %}
-        {% for cat in child_categories %}
-            <h4>{{cat.translated_name}}</h4>
-            {% if cat.translated_description %}<p class="product_category_description">{{ cat.translated_description }}</p>{% endif %}
-            {% for product in cat.active_products %}
-                {% if forloop.first %} <ul>  {% endif %}
-                    <li>{% thumbnail product.main_image.picture 85x85 as image %}
-                    <a href="{{ product.get_absolute_url }}"><img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" /></a>
-                <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a></li>
-                {% if forloop.last %} </ul> {% endif %}
-            {% endfor %}
-        {% endfor %}
-{% endif %}
+    
+    
+
 
 </div>
 
