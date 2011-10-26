@@ -1,4 +1,7 @@
-/* @override http://localhost:8000/static/css/style.css */
+/* @override 
+	http://localhost:8000/static/css/style.css
+	http://www.tendance-garden.fr/static/css/style.css
+*/
 
 body {
 	background-color: #626364;
@@ -38,11 +41,11 @@ span.slogan {
 
 #page h2,
 #page h3 {
-	color: #ff873c;
-	font-size: 4em;
-	font-family: 'JamesFajardoRegular';
+	color: #505050;
+	font-size: 3em;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	letter-spacing: -2px;
 }
 
 h2.fondgris {
@@ -238,3 +241,37 @@ address{
 .footlinks > ul {
 	margin-bottom: 5px;
 }
+
+/* @group Catégorie */
+
+#product_category {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+#product_category p{
+	display: block;
+	margin-bottom: 20px;
+	font-style: italic;
+	color: #515151;
+}
+
+div.sous-cat{
+	position: relative;
+}
+
+div.sous-cat h4{
+	position: absolute;
+	background-color: #bc0c26;
+	color: #fffeff;
+	width: 120px;
+	font-size: 22px;
+	font-weight: bold;
+	padding: 15px 10px;
+	text-align: center;
+	line-height: 26px;
+}
+
+/* @end */
+
+
