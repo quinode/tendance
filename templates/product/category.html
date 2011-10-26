@@ -39,7 +39,9 @@
             {% endif %}
             {% thumbnail cat.main_image.picture '200' as image %}
             <a href="{{ cat.get_absolute_url }}">
-                <img src="{{media_url}}/{{ image }}" width="{{ image.width }}" height="{{ image.height }}" /></a>               
+                <img src="{{media_url}}/{{ image }}" 
+                    width="{{ image.width }}" 
+                    height="{{ image.height }}" /></a>               
         </div>    
         {% endfor %}
 {% endif %}
