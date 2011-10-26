@@ -46,22 +46,19 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
 </div>
 
 <div class="grid_4 blanc">
-
-    <p>{{ product.translated_description }}</p>
-
+    <p>{{ product.description }}</p>
 </div>
 
 <div class="grid_3 blanc">
-
-    {% with product.translated_attributes as atts %}{% if atts %}
-    <p class="productattributes">
-    {% for att in product.translated_attributes %}
-    {{ att.description }}: {{ att.value }}<br/>
-    {% endfor %}
-    </p>
-    {% endif %}{% endwith %}
-
-
+    {% with product.translated_attributes as atts %}
+        {% if atts %}
+            <p class="productattributes">
+            {% for att in product.translated_attributes %}
+            {{ att.description }}: {{ att.value }}<br/>
+            {% endfor %}
+            </p>
+        {% endif %}
+    {% endwith %}
 </div>
 
 <div class="grid_12 blanc">
