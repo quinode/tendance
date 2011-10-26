@@ -25,6 +25,19 @@ from django import forms
 #         return queryset.filter(parent=value)
 
 
+
+class ProductAdmin(ProductOptions):
+    
+    list_display = ('name','active','featured',)
+    list_display_links = ('name',)
+    list_filter = ('category', 'date_added','active','featured')
+    ordering = ['category', 'ordering']
+#    list_filter = (Catlevel,)
+
+
+admin.site.unregister(Product)
+admin.site.register(Product, ProductAdmin)
+
 class CategoryAdminForm(forms.ModelForm):
     description = forms.CharField(widget=AdminTinyMCE(attrs={'cols':80,'rows':20}))
     class Meta:
