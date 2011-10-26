@@ -60,19 +60,33 @@ h2.fondgris {
 
 #colonne {
 	display: inline-block;
-}
-
-#attente {
+	font-size: 14px;
 	padding: 20px;
 }
 
-#attente h3 {
-	font-size: 48px;
-	margin-top: 0;
+#colonne h5{
+	font-weight: bold;
+	text-align: left;
+	color: #75243a;
+	font-size: 16px;
+	text-indent: 30px;
 }
 
-#attente p {
-	margin-bottom: 10px;
+address{
+	display: block;
+	position: relative;
+	left: 10px;
+}
+
+#carte{
+	position: absolute;
+	left: 130px;
+	top: -5px;
+}
+
+#colonne em{
+	font-style: italic;
+	font-size: 12px;
 }
 
 #entete {
