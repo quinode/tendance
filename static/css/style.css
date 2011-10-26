@@ -296,15 +296,16 @@ div.sous-cat h4{
 
 #product_category li{
 	display: block;
-	border-bottom: 1px solid #5e5e5e;
-	position: relative;
-	border: 1px solid #a9a9a9;
-	vertical-align: middle;
+	margin-bottom: 17px;
+	
 }
 
 .product_listing{
+	border: 1px solid #a9a9a9;
 	padding: 10px;
-
+	position: relative;
+	vertical-align: middle;
+	min-height: 80px;
 }
 
 #product_category img{
@@ -321,7 +322,10 @@ div.sous-cat h4{
 }
 
 
-
+.listed_in{
+	font-weight: bold;
+	color: #a9a9a9;
+}
 
 
 /* @end */

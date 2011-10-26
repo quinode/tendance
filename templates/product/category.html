@@ -64,13 +64,15 @@
                 
                     <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a>
                     <br/>
-                    {% for parent in product.parents %}
-                    
-                    {% endfor %}
-                    <br/>
+                    {% if product.category %}<span class="listed_in">
+                        {% for cat in product.category.all %}
+                        {{ cat.name }}{% if not forloop.last %} - {% endif %}
+                        {% endfor %}
+                        </span><br/>
+                    {% endif %}
                     {% for attr in product.productattribute_set.all %}
-                    {% if attr.name == 'matiere' %}
-                    <b>{{ attr.name }}</b> :  {{ attr.value }}
+                    {% if attr.name == 'matiere' or attr.name == 'dimensions' %}
+                    <b>{{ attr.name }}</b> :  {{ attr.value }}<br/>
                     {% endif %}
                     {% endfor %}
             </span>
