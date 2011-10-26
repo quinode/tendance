@@ -38,7 +38,7 @@
                 <p class="product_category_description">{{ cat.translated_description }}</p>
             {% endif %}
             <a href="{{ cat.get_absolute_url }}">
-                <img src="{{ image.picture }}" width="{{ image.width }}" height="{{ image.height }}" /></a>               
+                <img src="{{ cat.main_image.picture }}" width="{{ image.width }}" height="{{ image.height }}" /></a>               
         </div>    
         {% endfor %}
 {% endif %}
