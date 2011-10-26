@@ -37,7 +37,7 @@
             {% if cat.translated_description %}
                 <p class="product_category_description">{{ cat.translated_description }}</p>
             {% endif %}
-            {% thumbnail cat.main_image.picture '200' as image %}
+            {% thumbnail cat.main_image.picture 200 as image %}
             <a href="{{ cat.get_absolute_url }}">
                 <img src="{{media_url}}/{{ image }}" 
                     width="{{ image.width }}" 
