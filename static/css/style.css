@@ -33,6 +33,12 @@ span.slogan {
 	left: 16px;
 }
 
+a{
+	color: #bc0c26;
+	font-weight: bold;
+	text-decoration: none;
+}
+
 #int-ext {
 	position: absolute;
 	top: 78px;
@@ -46,6 +52,7 @@ span.slogan {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	letter-spacing: -2px;
+	font-weight: bold;
 }
 
 h2.fondgris {
@@ -244,6 +251,8 @@ address{
 
 /* @group Catégorie */
 
+
+
 #product_category {
 	margin-bottom: 20px;
 	display: inline-block;
@@ -258,7 +267,14 @@ address{
 
 div.sous-cat{
 	position: relative;
+	margin-left: 15px;
 }
+
+div.sous-cat.bl-hover h4{
+	color: #bc0c26;
+	background-color: rgba(234,234,234,0.7);
+}
+
 
 div.sous-cat h4{
 	position: absolute;
@@ -272,6 +288,36 @@ div.sous-cat h4{
 	line-height: 26px;
 }
 
+/* @group Liste Produits */
+
+#product_category li{
+	display: block;
+	border-bottom: 1px solid #5e5e5e;
+	position: relative;
+	padding: 10px;
+	border: 1px solid #a9a9a9;
+	vertical-align: middle;
+}
+
+#product_category img{
+	display: inline-block;
+}
+
+.minidesc{
+	
+	position: absolute;
+	left: 110px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+
+
+
+
 /* @end */
+
+/* @end */
+
 
 

@@ -54,9 +54,25 @@
     
     {% for product in products %} 
         {% if forloop.first %} <ul>  {% endif %}
-            <li>{% thumbnail product.main_image.picture 85x85 as image %}
-            <a href="{{ product.get_absolute_url }}"><img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" /></a>
-            <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a></li>
+            <li class="grid_4">
+                {% thumbnail product.main_image.picture 85x85 as image %}
+                <a href="{{ product.get_absolute_url }}">
+                <img src="{{ image }}"/></a>
+                <span class="minidesc">
+                
+                    <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a>
+                    <br/>
+                    {% for parent in product.parents %}
+                    
+                    {% endfor %}
+                    <br/>
+                    {% for attr in product.productattribute_set.all %}
+                    {% if attr.name == 'matiere' %}
+                    <b>{{ attr.name }}</b> :  {{ attr.value }}
+                    {% endif %}
+                    {% endfor %}
+            </span>
+            </li>
         {% if forloop.last %} </ul> {% endif %}
     {% endfor %}
     
