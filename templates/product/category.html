@@ -39,7 +39,6 @@
             {% thumbnail cat.main_image.picture 85x85 as image %}
             <a href="{{ cat.get_absolute_url }}">
                 <img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" /></a>               
-            {% endfor %}
         </div>    
         {% endfor %}
 {% endif %}
