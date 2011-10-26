@@ -298,9 +298,13 @@ div.sous-cat h4{
 	display: block;
 	border-bottom: 1px solid #5e5e5e;
 	position: relative;
-	padding: 10px;
 	border: 1px solid #a9a9a9;
 	vertical-align: middle;
+}
+
+.product_listing{
+	padding: 10px;
+
 }
 
 #product_category img{
