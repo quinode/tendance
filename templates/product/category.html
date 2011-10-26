@@ -56,7 +56,7 @@
     
     {% for product in products %} 
         {% if forloop.first %} <ul>  {% endif %}
-            <li class="grid_4">
+            <li class="grid_4"><div class="product_listing">
                 {% thumbnail product.main_image.picture 85x85 as image %}
                 <a href="{{ product.get_absolute_url }}">
                 <img src="{{ image }}"/></a>
@@ -74,7 +74,7 @@
                     {% endif %}
                     {% endfor %}
             </span>
-            </li>
+            </div></li>
         {% if forloop.last %} </ul> {% endif %}
     {% endfor %}
     
