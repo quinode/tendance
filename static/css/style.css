@@ -253,12 +253,12 @@ address{
 
 
 
-#product_category {
+.product_category_header {
 	margin-bottom: 20px;
 	display: inline-block;
 }
 
-#product_category p{
+.product_category_description{
 	display: block;
 	margin-bottom: 20px;
 	font-style: italic;
@@ -290,6 +290,10 @@ div.sous-cat h4{
 
 /* @group Liste Produits */
 
+#product_category{
+	display: inline-block;
+}
+
 #product_category li{
 	display: block;
 	border-bottom: 1px solid #5e5e5e;
@@ -303,8 +307,9 @@ div.sous-cat h4{
 	display: inline-block;
 }
 
+
+
 .minidesc{
-	
 	position: absolute;
 	left: 110px;
 	font-size: 12px;

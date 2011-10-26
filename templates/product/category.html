@@ -20,7 +20,7 @@
 
 
 {% block content %}
-<div class="grid_12 blanc">
+<div class="grid_12 blanc product_category_header">
 
 
     {% block navbar %}
@@ -32,12 +32,14 @@
     {% endblock %}
 
 
-<div id="product_category">
+
 <h3>{{ category.translated_name }}</h3>
 {% if category.translated_description %}
     <p class="product_category_description">{{ category.translated_description }}</p>
 {% endif %}
+</div>
 
+<div id="product_category">
 
 {% if child_categories %}
         {% for cat in child_categories %}
@@ -77,9 +79,8 @@
     {% endfor %}
     
     
-
+</div>
 <br/><br/>
-</div>
 
-</div>
+
 {% endblock %}

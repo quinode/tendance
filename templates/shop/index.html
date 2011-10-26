@@ -54,7 +54,7 @@ $(function(){
             <img src="{{media_url}}/{{ cat.main_image.picture }}" alt="" />  
             <div class="info" >  
             <h2><a href="{{ cat.get_absolute_url }}" >Découvrez la gamme {{cat.name}}</a></h2>  
-            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description}}</a></p>  
+            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description|safe}}</a></p>  
             </div>  
         </div>  
         {% endfor %}
