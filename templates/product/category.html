@@ -24,14 +24,14 @@
 
 
 <div id="product_category">
-<h3>!!{{ category.translated_name }}</h3>
+<h3>{{ category.translated_name }}</h3>
 {% if category.translated_description %}
     <p class="product_category_description">{{ category.translated_description }}</p>
 {% endif %}
 
 {% if child_categories %}
         {% for cat in child_categories %}
-        s<div class="grid_2 sous-cat">
+        <div class="grid_2 sous-cat">
             <h4>{{cat.translated_name}}</h4>
             {% if cat.translated_description %}
                 <p class="product_category_description">{{ cat.translated_description }}</p>
