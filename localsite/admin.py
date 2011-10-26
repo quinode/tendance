@@ -28,7 +28,7 @@ from django import forms
 
 class ProductAdmin(ProductOptions):
     
-    list_display = ('name','active','featured',)
+    list_display = ('main_category','name','active','featured',)
     list_display_links = ('name',)
     list_filter = ('category', 'date_added','active','featured')
     ordering = ['category', 'ordering']
