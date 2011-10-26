@@ -48,7 +48,7 @@ a{
 #page h2,
 #page h3 {
 	color: #505050;
-	font-size: 3em;
+	font-size: 50px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	letter-spacing: -2px;
@@ -104,6 +104,18 @@ address{
 	background-repeat: no-repeat;
 	height: 175px;
 	position: relative;
+}
+
+#contact{
+	position: absolute;
+	right: 10px;
+	top: 8px;
+	text-align: right;
+	
+	color: #41565e;
+	font-size: 14px;
+	line-height: 15px;
+	font-weight: bold;
 }
 
 #logo {

@@ -21,7 +21,7 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
 
 
 {% block content %}
-<div class="grid_9 blanc">
+<div class="grid_12 blanc">
 
 
 {% block navbar %}
@@ -33,19 +33,25 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
     <li>{{ product.translated_name }}</li>
     </ul>
 {% endblock %}
+<h3>{{ product.translated_name }}</h3>
 
-    {% block productdetail %}
-    <h3>{{ product.translated_name }}</h3>
-    <p>{{ product.translated_description }}</p>
-    {% trans "Price" %} {% if default_view_tax %} {% trans '(incl. tax)' %}{% endif %}:
-    <h3>
-    	{% if sale %}<strike id="fullprice" style="display: block;">{{ product|discount_price:""|currency }}</strike>{% endif %}
-    	<span id="price">{{ product|discount_price:sale|currency }}</span>
-    </h3>
+</div>
+
+<div class="grid_5 blanc">    
     {% for pic in product.productimage_set.all %}
-        {% thumbnail pic.picture 280x280 as image %}
+        {% thumbnail pic.picture 380x380 as image %}
         <img src="{{ image }}" width="{{ image.width }}" height="{{ image.height }}" />
     {% endfor %}
+    
+</div>
+
+<div class="grid_4 blanc">
+
+    <p>{{ product.translated_description }}</p>
+
+</div>
+
+<div class="grid_3 blanc">
 
     {% with product.translated_attributes as atts %}{% if atts %}
     <p class="productattributes">
@@ -55,15 +61,10 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
     </p>
     {% endif %}{% endwith %}
 
-    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-    <form id="options" action="{% url satchmo_smart_add %}" method="post">{% csrf_token %}
-    {% trans "Quantity" %} <input type="text" size="5" name="quantity" id="quantity" value="1" class="priced" />
-    <input type="hidden" name="productname" id="productname" value="{{product.slug}}" />
-    <input type="submit" name="addcart" value="{% trans "Add to cart" %}" />
-    {% plugin_point "product_add_buttons" %}
-    {% plugin_point "product_form" %}
-    </form>
-    {% endblock %}
 
+</div>
+
+<div class="grid_12 blanc">
+<br/><br/>
 </div>
 {% endblock %}
