@@ -7,9 +7,10 @@
 {% if category.meta %}
     <meta name="description" content="{{ category.meta|escape }}">
 {% endif %}
+
 {% endblock %}
 {% block javascript %}
-    <script type="text/javascript" src="{{media_url}}js/jquery.biggerlink.min.js">
+    <script type="text/javascript" src="{{media_url}}js/jquery.biggerlink.min.js"></script>
     <script type="text/javascript">
         $(function(){
             $("div.sous-cat").biggerlink();
