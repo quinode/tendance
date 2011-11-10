@@ -1,6 +1,6 @@
 /* @override 
-	http://localhost:8000/static/css/style.css
 	http://www.tendance-garden.fr/static/css/style.css
+	http://localhost:8000/static/css/style.css
 */
 
 body {
@@ -325,6 +325,10 @@ address{
 div.sous-cat{
 	position: relative;
 	margin-left: 15px;
+	width: 200px;
+	overflow: hidden;
+	height: 280px;
+	margin-bottom: 25px;
 }
 
 div.sous-cat.bl-hover h4{
