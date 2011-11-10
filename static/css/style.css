@@ -261,6 +261,51 @@ address{
 	margin-bottom: 5px;
 }
 
+/* @group Liste Produits */
+
+#product_category{
+	display: inline-block;
+}
+
+#product_category li{
+	display: block;
+	margin-bottom: 17px;
+	
+}
+
+.product_listing:hover{
+}
+
+.product_listing{
+	border: 1px solid #a9a9a9;
+	padding: 10px;
+	position: relative;
+	vertical-align: middle;
+	min-height: 80px;
+}
+
+#product_category img{
+	display: inline-block;
+}
+
+
+
+.minidesc{
+	position: absolute;
+	left: 110px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+
+.listed_in{
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+
+/* @end */
+
 /* @group Catégorie */
 
 
@@ -299,48 +344,6 @@ div.sous-cat h4{
 	text-align: center;
 	line-height: 26px;
 }
-
-/* @group Liste Produits */
-
-#product_category{
-	display: inline-block;
-}
-
-#product_category li{
-	display: block;
-	margin-bottom: 17px;
-	
-}
-
-.product_listing{
-	border: 1px solid #a9a9a9;
-	padding: 10px;
-	position: relative;
-	vertical-align: middle;
-	min-height: 80px;
-}
-
-#product_category img{
-	display: inline-block;
-}
-
-
-
-.minidesc{
-	position: absolute;
-	left: 110px;
-	font-size: 12px;
-	line-height: 16px;
-}
-
-
-.listed_in{
-	font-weight: bold;
-	color: #a9a9a9;
-}
-
-
-/* @end */
 
 /* @end */
 
