@@ -1,0 +1,107 @@
+[
+    {
+        "pk": 1, 
+        "model": "localsite.matiere", 
+        "fields": {
+            "product": [], 
+            "description": "Mobilier de jardin en acier", 
+            "name": "Acier", 
+            "slug": "acier"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "localsite.matiere", 
+        "fields": {
+            "product": [], 
+            "description": "Mobilier de jardin en aluminium", 
+            "name": "Aluminium", 
+            "slug": "aluminium"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "localsite.matiere", 
+        "fields": {
+            "product": [], 
+            "description": "Mobilier de jardin en inox", 
+            "name": "Inox", 
+            "slug": "inox"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "localsite.matiere", 
+        "fields": {
+            "product": [], 
+            "description": "Mobiler en rotin naturel", 
+            "name": "Rotin naturel", 
+            "slug": "rotin-naturel"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "localsite.matiere", 
+        "fields": {
+            "product": [], 
+            "description": "Mobilier en r\u00e9sine et aluminium", 
+            "name": "R\u00e9sine & Alu.", 
+            "slug": "resine-alu"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "localsite.fabricant", 
+        "fields": {
+            "product": [], 
+            "picture": "logos/fabricant-picture-4-seasons-outdoor.jpg", 
+            "description": "La marque 4 Seasons Outdoor ...", 
+            "name": "4 Seasons Outdoor", 
+            "slug": "4-seasons"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "localsite.fabricant", 
+        "fields": {
+            "product": [], 
+            "picture": "logos/fabricant-picture-emu.jpg", 
+            "description": "La marque EMU", 
+            "name": "EMU", 
+            "slug": "emu"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "localsite.fabricant", 
+        "fields": {
+            "product": [], 
+            "picture": "logos/fabricant-picture-kettler.jpg", 
+            "description": "La marque KETTLER ...", 
+            "name": "Kettler", 
+            "slug": "kettler"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "localsite.fabricant", 
+        "fields": {
+            "product": [], 
+            "picture": "logos/fabricant-picture-la-gobernadora.jpg", 
+            "description": "La marque La Gobernardora ...", 
+            "name": "La Gobernadora", 
+            "slug": "la-gobernadora"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "localsite.fabricant", 
+        "fields": {
+            "product": [], 
+            "picture": "logos/fabricant-picture-maison-kok.jpg", 
+            "description": "La marque Maison Kok", 
+            "name": "Maison Kok", 
+            "slug": "maison-kok"
+        }
+    }
+]
