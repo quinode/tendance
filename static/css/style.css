@@ -251,6 +251,11 @@ address{
 	font-style: normal;
 }
 
+#footer a:hover{
+	text-decoration: underline;
+	color: #bc0c26;
+}
+
 #footer ul{
 	margin: 0;
 }
@@ -303,6 +308,11 @@ address{
 	width: 190px;
 }
 
+
+#coord strong{
+	font-weight: bold;
+	font-size: 13px;
+}
 #coord address{
 	padding: 0;
 	margin: 0 0 0 -5px;
@@ -367,6 +377,8 @@ http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
 	left: 110px;
 	font-size: 12px;
 	line-height: 16px;
+	width: 180px;
+	#top: -50%;
 }
 
 
