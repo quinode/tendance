@@ -79,7 +79,9 @@ TEMPLATE_CONTEXT_PROCESSORS = ('satchmo_store.shop.context_processors.settings',
                                'django.contrib.messages.context_processors.messages',
                                'django.core.context_processors.request',
                                #'satchmo_ext.recentlist.context_processors.recent_products',
+                               'tendance.context_processors.footer',
                                )
+                           
 
 ROOT_URLCONF = 'urls'
 
@@ -148,6 +150,7 @@ INSTALLED_APPS = (
     'localsite',
     'django_extensions',
     'tinymce',
+    'south',
 )
 
 AUTHENTICATION_BACKENDS = (

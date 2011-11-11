@@ -19,6 +19,7 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
 {% endif %}
 {% endblock %}
 
+{% block title %}{{ product.translated_name  }}{% endblock %}
 
 {% block content %}
 <div class="grid_12 blanc">
@@ -50,15 +51,26 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
 </div>
 
 <div class="grid_3 blanc">
+    <table class="attributes" cellspacing="0" cellpadding="0" border="1">
     {% with product.translated_attributes as atts %}
         {% if atts %}
-            <p class="productattributes">
             {% for att in product.translated_attributes %}
-            {{ att.description }}: {{ att.value }}<br/>
+            <tr><th>{{ att.description }}</th><td>{{ att.value }}</td></tr>
             {% endfor %}
-            </p>
         {% endif %}
     {% endwith %}
+    {% if product.matiere_set.all %}
+        {% for m in product.matiere_set.all %}
+        <tr><th>Matière</th><td>{{ m.name }}</td></tr>
+        {% endfor %}
+    {% endif %}
+    {% if product.fabricant_set.all %}
+        {% for m in product.fabricant_set.all %}
+        <tr><th>Fabricant</th><td>{{ m.name }}</td></tr>
+        {% endfor %}
+    {% endif %}
+    
+    </table>
 </div>
 
 <div class="grid_12 blanc">

@@ -5,11 +5,31 @@ from product.models import Product, Category
 from django.http import HttpResponseRedirect
 from django.utils.translation import ugettext_lazy as _
 
-from product.models import Category
-from product.admin import CategoryOptions,ProductOptions
+from localsite.models import Matiere, Fabricant
+from product.admin import CategoryOptions,ProductOptions,ProductAttribute_Inline,ProductImage_Inline
+
+
+from django.contrib.admin.widgets import FilteredSelectMultiple
 
 from tinymce.widgets import AdminTinyMCE
 from django import forms
+
+class SortedQueryset:
+    def __init__(self, qs):
+        self.qs = qs
+        
+    def all(self):
+        #Permet de trier les catégories par le chemin complet (parents inclus)
+        items = list(self.qs.all())
+        def sort_by_unicode(x): return unicode(x)
+        items.sort(key=sort_by_unicode)
+        for i in items:
+            yield i
+
+    def __getattr__(self, name):
+        #Pour toutes les autres méthodes que all : appelle la méthode du queryset
+        return getattr(self.qs, name)
+
 
 ## Pour django 1.4
 # from tendance.utils import SimpleListFilter
@@ -25,15 +45,47 @@ from django import forms
 #         return queryset.filter(parent=value)
 
 
+class MatiereAdmin(admin.ModelAdmin):
+    filter_horizontal = ('product',)
+admin.site.register(Matiere, MatiereAdmin)
+
+class FabricantAdmin(admin.ModelAdmin):
+    filter_horizontal = ('product',)
+admin.site.register(Fabricant, FabricantAdmin)
+  
+
+class MatiereInline(admin.TabularInline):
+    model = Matiere.product.through
+    extra = 1
+
+class FabricantInline(admin.TabularInline):
+    model = Fabricant.product.through
+    extra = 1
+
+
+class ProductAdminForm(forms.ModelForm):
+    category = forms.ModelMultipleChoiceField(
+        queryset=SortedQueryset(Category.objects),
+        widget=FilteredSelectMultiple('category', False)
+    )
+    description = forms.CharField(widget=AdminTinyMCE(attrs={'cols':80,'rows':20}))
+    class Meta:
+        model = Product
 
 class ProductAdmin(ProductOptions):
-    
+    form = ProductAdminForm
     list_display = ('main_category','name','active','featured',)
     list_display_links = ('name',)
     list_filter = ('category', 'date_added','active','featured')
+    inlines = [MatiereInline, FabricantInline, ProductAttribute_Inline, ProductImage_Inline]
+    fieldsets = (
+            (None, {'fields': ('site','category', 'name', 'description', 'short_description','active', 'featured','ordering')}), 
+            (_('Meta Data'), {'fields': ('meta',), 'classes': ('collapse',)}),
+            (_('Related Products'), {'fields':('related_items',)}), 
+            )
+    filter_horizontal = ('category','related_items')
     ordering = ['category', 'ordering']
-#    list_filter = (Catlevel,)
-
+            
 
 admin.site.unregister(Product)
 admin.site.register(Product, ProductAdmin)

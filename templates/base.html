@@ -1,5 +1,4 @@
-{% load i18n satchmo_category satchmo_google satchmo_util app_plugins normalize_decimal %}
-{% block doctype %}<?xml version="1.0" encoding="UTF-8"?>
+{% load i18n satchmo_category satchmo_google satchmo_util app_plugins normalize_decimal %}{% block doctype %}<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 {% endblock %}
@@ -26,7 +25,7 @@
     <h1>Meubles de jardin</h1>
     <span id="mobilier" class="slogan">mobilier</span>
     <span id="int-ext" class="slogan">extérieur intérieur</span>
-    <img alt="logo" id="logo" src="{{ media_url }}images/logo.png" />
+    <a href="/"><img alt="logo" id="logo" src="{{ media_url }}images/logo.png" border="0" /></a>
 
     <div id="contact">
         Renseignements<br/>
@@ -37,18 +36,18 @@
     <div id="menubar">
 
     <a href="/" id="lien_collections">
-        <img src="{{ media_url }}images/icone-maison.png"> Collections
+        <img src="{{ media_url }}images/icone-maison.png" alt="Collections" /> Collections
     </a>
 
     <ul id="navigation">
-        <li><a href="/categorie/articles/parasol/"><img src="{{ media_url }}images/icone1.png"> Parasol</a></li>
-        <li><a href="/categorie/articles/bain-de-soleil/"><img src="{{ media_url }}images/icone2.png"> Bain de soleil</a></li>
-        <li><a href="/categorie/articles/fauteuil/"><img src="{{ media_url }}images/icone3.png"> Fauteuil</a></li>
-        <li><a href="/categorie/articles/chaise/"><img src="{{ media_url }}images/icone4.png"> Chaise</a></li>
-        <li><a href="/categorie/articles/table/"><img src="{{ media_url }}images/icone5.png"> Table</a></li>
-        <li><a href="/categorie/articles/canape/"><img src="{{ media_url }}images/icone6.png"> Canapé</a></li>
-        <li><a href="/categorie/articles/chambre/"><img src="{{ media_url }}images/icone7.png"> Chambre</a></li>
-        <li><a href="/categorie/articles/rangement/"><img src="{{ media_url }}images/icone8.png"> Rangement</a></li>
+        <li><a href="/categorie/articles/parasol/"><img src="{{ media_url }}images/icone1.png" alt="Parasol" /> Parasol</a></li>
+        <li><a href="/categorie/articles/bain-de-soleil/"><img src="{{ media_url }}images/icone2.png" alt="Bain de soleil" /> Bain de soleil</a></li>
+        <li><a href="/categorie/articles/fauteuil/"><img src="{{ media_url }}images/icone3.png" alt="Fauteuil" /> Fauteuil</a></li>
+        <li><a href="/categorie/articles/chaise/"><img src="{{ media_url }}images/icone4.png" alt="Chaise" /> Chaise</a></li>
+        <li><a href="/categorie/articles/table/"><img src="{{ media_url }}images/icone5.png" alt="Table" /> Table</a></li>
+        <li><a href="/categorie/articles/canape/"><img src="{{ media_url }}images/icone6.png" alt="Canapé" /> Canapé</a></li>
+        <li><a href="/categorie/articles/chambre/"><img src="{{ media_url }}images/icone7.png" alt="Chambre" /> Chambre</a></li>
+        <li><a href="/categorie/articles/rangement/"><img src="{{ media_url }}images/icone8.png" alt="Rangement" /> Rangement</a></li>
     </ul>
 
 
@@ -86,86 +85,110 @@
 
     <div id="footer">
         {% block footer %}
-        <div class="grid_2 prefix_1">
-            <img src="{{ media_url }}images/logo_gris.jpg" alt="Tendance Garden"/>
+        
+
+        
+        <div class="grid_4">
+            
+            <div id="coord">
+            <!--<img src="{{ media_url }}images/logo_gris.jpg" alt="Tendance Garden"/>-->
+            
+            <img src="{{media_url}}images/magasin.jpg" width="190"/>
+            <br/><br/>
+            
+            <address>
+                   <a href="http://maps.google.fr/maps?q=rue+de+milan+lempdes&hl=fr&ll=45.776099,3.205004&spn=0.008561,0.021136&sll=46.75984,1.738281&sspn=8.611865,21.643066&vpsrc=6&t=h&z=16">    
+                   <img id="carte" src="{{media_url}}images/carte.png">
+                   </a>   
+                <strong>Tendance Garden</strong><br/>
+                Rue de Milan<br/>
+                63370 Lempdes<br/><br/>
+                <b class="tel">Tel : 04.73.61.65.45</b><br/>
+            </address>
+            </div>
         </div>
         
         <div class="footlinks grid_2">
+            {% regroup categories by parent as cat_list %}
+            
             <h3>INDOOR /INTERIEUR</h3>
-            <h4>Collections</h4>
-            <ul>    <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-            </ul>
-
-            <h4>Meubles</h4>
-            <ul><li>Canapé</li>
-                <li>Chambre</li>
-                <li>Fauteuil</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
+            <ul>
+            {% for c in categories %}
+            {%  if c.parent.slug == 'collections-interieur' %}                
+                <li><a href="{{c.get_absolute_url}}">{{c.name}}</a>
+                {% if c.get_all_children %}
+                    <ul class="bulls">
+                        {% for sc in c.get_all_children %}
+                        <li><a href="{{sc.get_absolute_url}}">{{sc.name}}</a></li>
+                        {% endfor %}
+                        </ul>
+                {% endif %}
+                </li>
+            {% endif %}
+            {% endfor %}
             </ul>
         </div>
 
 
         <div class="footlinks grid_2">
             <h3>OUTDOOR /EXTERIEUR</h3>
-            <h4>Collections</h4>
-            <ul>    <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-            </ul>
-
-            <h4>Meubles</h4>
-            <ul><li>Canapé</li>
-                <li>Chambre</li>
-                <li>Fauteuil</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
+            <ul>
+            {% for c in categories %}
+            {%  if c.parent.slug == 'collections-exterieur' %}                
+                <li><a href="{{c.get_absolute_url}}">{{c.name}}</a>
+                {% if c.get_all_children %}
+                    <ul class="bulls">
+                        {% for sc in c.get_all_children %}
+                        <li><a href="{{sc.get_absolute_url}}">{{sc.name}}</a></li>
+                        {% endfor %}
+                        </ul>
+                {% endif %}
+                </li>
+            {% endif %}
+            {% endfor %}
             </ul>
         </div>
 
         <div class="footlinks grid_2">
             <h3>TOUS LES MEUBLES</h3>
-
-            <ul>    <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Chambre</li>
-                <li>Fauteuil</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
+            <ul class="bulls">
+            {% for c in categories %}
+            {%  if c.parent.slug == 'articles' %}                
+                <li><a href="{{c.get_absolute_url}}">{{c.name}}</a>
+                {% if c.get_all_children %}
+                    <ul class="bulls">
+                        {% for sc in c.get_all_children %}
+                        <li><a href="{{sc.get_absolute_url}}">{{sc.name}}</a></li>
+                        {% endfor %}
+                        </ul>
+                {% endif %}
+                </li>
+            {% endif %}
+            {% endfor %}
             </ul>
         </div>
 
-        <div class="footlinks grid_2 suffix_1">
-            <h3>FABRICANT</h3>
-
-            <ul>    <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
+        <div class="footlinks grid_2">
+            <h3>FABRICANTS</h3>
+            <ul class="bulls">
+            {% for f in fabricants %}
+                <li><a href="{{f.get_absolute_url}}">{{f.name}}</a></li>
+            {% endfor %}
             </ul>
 
             <h3>MATIERES</h3>
-
-            <ul><li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
-                <li>Salon...</li>
+            <ul class="bulls">
+            {% for m in matieres %}
+                <li><a href="{{m.get_absolute_url}}">{{m.name}}</a></li>
+            {% endfor %}
             </ul>
         </div>
     
     {% endblock %}
-
+    <p id="w3c">
+        <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+      </p>
     </div>
 
 </div>

@@ -66,6 +66,7 @@ h2.fondgris {
 	background-image: url(/static/images/signe_bas.png);
 	background-repeat: no-repeat;
 	background-position: right top;
+	position: relative;
 }
 
 #colonne {
@@ -229,16 +230,43 @@ address{
 	margin-bottom: 20px;
 }
 
+/* @group footer */
+
 #footer {
 	display: inline-block;
 	background-color: #e3e4e4;
-	color: #707173;
 	background-image: url(/static/images/feuilles_grises.png);
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 12px;
+	position: relative;
+}
+
+#footer a{
+	
+	color: #707173;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#footer ul{
+	margin: 0;
+}
+
+#footer ul.bulls{
+	list-style-type: circle;
+	list-style-position: inside;
+	color: #707173;
+}
+
+#footer ul li ul{
+	
+	margin-left: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
 }
 
 
@@ -261,34 +289,78 @@ address{
 	margin-bottom: 5px;
 }
 
+#w3c{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+#coord{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f6f6f6;
+	padding: 20px;
+	width: 190px;
+}
+
+#coord address{
+	padding: 0;
+	margin: 0 0 0 -5px;
+}
+
+.tel{
+	font-weight: bold;
+	font-size: 19px;
+	color: #bc0c26;
+}
+
+/* @end */
+
 /* @group Liste Produits */
 
 #product_category{
 	display: inline-block;
+	position: relative;
 }
 
 #product_category li{
 	display: block;
 	margin-bottom: 17px;
-	
+	position: relative;
 }
 
 .product_listing:hover{
 }
 
+/*
+Thanks
+http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
+*/
+
+
 .product_listing{
 	border: 1px solid #a9a9a9;
-	padding: 10px;
 	position: relative;
+	overflow: hidden;
+		
+	display: table;
+	height: 107px;
+	width: 100%;
+}
+
+.product_wrapper{
+	position: relative;
+	padding: 10px;
 	vertical-align: middle;
-	min-height: 80px;
+	display: table-cell;
+	#position: absolute;
+	#top:50%;
 }
 
 #product_category img{
-	display: inline-block;
+	#position: relative;
+	#top: -50%;
 }
-
-
 
 .minidesc{
 	position: absolute;
@@ -347,6 +419,66 @@ div.sous-cat h4{
 	padding: 15px 10px;
 	text-align: center;
 	line-height: 26px;
+}
+
+/* @end */
+
+/* @group Produit */
+
+table.attributes{
+	border-collapse: collapse;
+	border: 1px;
+	font-size: 14px;
+}
+
+.attributes th,
+.attributes td{
+	border: 1px solid #616161;
+	padding: 5px;
+}
+
+.attributes th{
+	text-align: left;
+	font-weight: normal;
+	padding-right: 20px;
+	background-color: #d9d9d9;
+	font-style: normal;
+}
+
+.attributes{
+	
+}
+
+
+
+/* @end */
+
+
+
+/* @group filterpatch */
+
+.selector {
+    width: 900px;
+}
+
+.selector-available, .selector-chosen {
+    width: 420px;
+	border: 1px solid #ccc;
+}
+
+.selector ul.selector-chooser {
+	margin: 8em 10px 0;
+
+}
+
+.selector select {
+    margin-bottom: 5px;
+    margin-top: 0;
+	width: 420px;
+}
+
+a.selector-chooseall, a.selector-clearall {
+    width: 12em;
 }
 
 /* @end */

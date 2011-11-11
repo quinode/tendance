@@ -3,10 +3,14 @@
 {% load thumbnail %}
 {% load satchmo_category %}
 
+{% block title %}{{ category.name }}{% endblock %}
+
+
 {% block extra-head %}
 {% if category.meta %}
     <meta name="description" content="{{ category.meta|escape }}">
 {% endif %}
+
 
 {% endblock %}
 {% block javascript %}
@@ -26,16 +30,21 @@
     {% block navbar %}
     <ul id="navbar">
         <li class="first"><a href="{{ shop_base }}/">{% trans "Home" %}</a></li>
-    	{% for parent in category.parents %}<li><a href="{{ parent.get_absolute_url }}">{{ parent.translated_name }}</a></li>{% endfor %}
-    	<li>{{ category.translated_name }}</li>
-    </ul>	
+        {% for parent in category.parents %}<li><a href="{{ parent.get_absolute_url }}">{{ parent.name }}</a></li>{% endfor %}
+        <li>{{ category.name }}</li>
+    </ul>   
     {% endblock %}
 
+{% if logo %}
+<img align="left" src="{{media_url}}/{{ logo }}" 
+    width="{{ logo.width }}" 
+    height="{{ logo.height }}" style="padding-right:20px"
+    alt="{{ category.name }}"/>
+{% endif %}
 
-
-<h3>{{ category.translated_name }}</h3>
-{% if category.translated_description %}
-    <p class="product_category_description">{{ category.translated_description }}</p>
+<h3>{{ category.name }}</h3>
+{% if category.description %}
+    <p class="product_category_description">{{ category.description|safe}}</p>
 {% endif %}
 </div>
 
@@ -49,17 +58,24 @@
             <a href="{{ cat.get_absolute_url }}">
                 <img src="{{media_url}}/{{ cat.main_image.picture }}" 
                     width="{{ cat.main_image.picture.width }}" 
-                    height="{{ cat.main_image.picture.height }}" /></a>               
+                    height="{{ cat.main_image.picture.height }}" 
+                    alt="{{cat.name}}" /></a>
         </div>    
         {% endfor %}
 {% endif %}
+
+
+
     
     {% for product in products %} 
         {% if forloop.first %} <ul>  {% endif %}
             <li class="grid_4"><div class="product_listing">
+                
+                <div class="product_wrapper">
+                
                 {% thumbnail product.main_image.picture 85x85 as image %}
                 <a href="{{ product.get_absolute_url }}">
-                <img src="{{ image }}"/></a>
+                <img src="{{ image }}" alt="{{ product.translated_name }}" /></a>
                 <span class="minidesc">
                 
                     <a href="{{ product.get_absolute_url }}">{{ product.translated_name }}</a>
@@ -76,6 +92,7 @@
                     {% endif %}
                     {% endfor %}
             </span>
+            </div>
             </div></li>
         {% if forloop.last %} </ul> {% endif %}
     {% endfor %}
