@@ -8,7 +8,8 @@
 {% block javascript %}
 <script type="text/javascript">
 $(function(){  
-    $("#diaporama").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);  
+    $("#diaporama").tabs({  fx:{opacity: "toggle"},
+                            event: "mouseover"}).tabs("rotate", 5000, true);  
 
     $("#diaporama").hover(  
         function() {
@@ -18,13 +19,24 @@ $(function(){
             $("#diaporama").tabs("rotate",5000,true);  
             }  
     );
-    $("#collections > li.a").hover(
+    $("#collections > li a").click(function(){
+        window.location = $(this).attr('rel');
+    });
+    
+    /*$("#collections > li").hover(
         function() {
-            $(this).addClass('ui-state-active');
+            $(this).addClass('ui-state-hover');
             $(this).addClass('ui-tabs-selected');
         }
-        )
+        ,function() {
+            //$(this).removeClass('ui-state-active');
+            $(this).removeClass('ui-state-hover');
+            $(this).removeClass('ui-tabs-selected');
+        }
+        );*/
 });
+
+
 </script>
 {% endblock %}
 
@@ -37,7 +49,7 @@ $(function(){
 
         {% for cat in int_cats %}
         <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-{{ cat.id }}">
-        <a href="#fragment-{{ cat.id }}">{{ cat.name }}</a>
+        <a href="#fragment-{{ cat.id }}" rel="{{ cat.get_absolute_url }}">{{ cat.name }}</a>
         </li>
         {% endfor %}
         
@@ -45,7 +57,7 @@ $(function(){
         
         {% for cat in ext_cats %}
         <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-{{ cat.id }}">
-        <a href="#fragment-{{ cat.id }}">{{ cat.name }}</a>
+        <a href="#fragment-{{ cat.id }}" rel="{{ cat.get_absolute_url }}">{{ cat.name }}</a>
         </li>
         {% endfor %}
 

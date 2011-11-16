@@ -28,7 +28,7 @@ z-index: 1000;
 }
 
  #diaporama li.ui-tabs-nav-item a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 

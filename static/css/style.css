@@ -128,7 +128,7 @@ address{
 
 #menubar {
 	height: 80px;
-	background-color: #bc0c26;
+	background-color: #8ab41d;
 	background-image: url(/static/images/bandeau_vert.png);
 	background-repeat: repeat-x;
 	position: relative;
@@ -252,7 +252,7 @@ address{
 }
 
 #footer a:hover{
-	text-decoration: underline;
+	text-decoration: none;
 	color: #bc0c26;
 }
 
@@ -365,6 +365,13 @@ http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
 	display: table-cell;
 	#position: absolute;
 	#top:50%;
+}
+
+.product_listing.bl-hover{
+    box-shadow:2px 2px 5px #555;
+    -webkit-box-shadow:2px 2px 5px #555;
+    -moz-box-shadow:2px 2px 5px #555;
+	background-color: white;
 }
 
 #product_category img{
