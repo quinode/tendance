@@ -21,7 +21,10 @@
     {% endblock %}
 </head>
 <body>
+<div id="ombre" class="container_12">
+    
 <div id="entete" class="container_12">
+    
     <h1>Meubles de jardin</h1>
     <span id="mobilier" class="slogan">mobilier</span>
     <span id="int-ext" class="slogan">extérieur intérieur</span>
@@ -30,7 +33,7 @@
     <div id="contact">
         Renseignements<br/>
         <b> 04 73 61 65 45</b><br/>
-        contact
+        <a href="/contact/">contactez-nous</a>
     </div>
 
     <div id="menubar">
@@ -103,7 +106,9 @@
                 <strong>Tendance Garden</strong><br/>
                 Rue de Milan<br/>
                 63370 Lempdes<br/><br/>
-                <b class="tel">Tel : 04.73.61.65.45</b><br/>
+                <b class="tel">Tel : 04 73 61 65 45</b><br/>
+                <a id="email" href="/contact/">contactez-nous par email</a>
+                
             </address>
             </div>
         </div>
@@ -111,7 +116,7 @@
         <div class="footlinks grid_2">
             {% regroup categories by parent as cat_list %}
             
-            <h3>INDOOR /INTERIEUR</h3>
+            <h3>INTERIEUR / INDOOR</h3>
             <ul>
             {% for c in categories %}
             {%  if c.parent.slug == 'collections-interieur' %}                
@@ -131,7 +136,7 @@
 
 
         <div class="footlinks grid_2">
-            <h3>OUTDOOR /EXTERIEUR</h3>
+            <h3>EXTERIEUR / OUTDOOR</h3>
             <ul>
             {% for c in categories %}
             {%  if c.parent.slug == 'collections-exterieur' %}                
@@ -191,6 +196,7 @@
       </p>
     </div>
 
+</div>
 </div>
 
 {% block page-close %}

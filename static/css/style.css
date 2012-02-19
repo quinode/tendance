@@ -4,9 +4,17 @@
 */
 
 body {
-	background-color: #626364;
+	background-color: #d9dbe1;
 	font-family: Arial, Helvetica, sans-serif;
+	color: #222;
 }
+
+#ombre {
+	padding-left: 39px;
+	padding-right: 39px;
+	background-image: url(/static/images/ombre_content.png);
+}
+
 
 h1 {
 	color: #fff;
@@ -48,7 +56,7 @@ a{
 #page h2,
 #page h3 {
 	color: #505050;
-	font-size: 50px;
+	font-size: 45px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	letter-spacing: -2px;
@@ -91,8 +99,9 @@ address{
 
 #carte{
 	position: absolute;
-	left: 130px;
-	top: -5px;
+	left: 142px;
+	top: 0;
+	width: 37px;
 }
 
 #colonne em{
@@ -112,11 +121,13 @@ address{
 	right: 10px;
 	top: 8px;
 	text-align: right;
-	
 	color: #41565e;
 	font-size: 14px;
-	line-height: 15px;
 	font-weight: bold;
+}
+
+#contact b{
+	font-size: 18px;
 }
 
 #logo {
@@ -124,6 +135,51 @@ address{
 	top: 0px;
 	left: 0px;
 	z-index: 1;
+}
+
+#contact_form{
+	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+#contact_form td{
+	padding: 2px;
+}
+
+#contact_form th{
+	padding: 2px 20px 2px 2px;
+	text-align: right;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 14px;
+	color: #5e5e5e;
+}
+
+#contact_form input{
+	font-size: 14px;
+	padding: 4px;
+	width: 97%;
+}
+
+#contact_form select{
+	font-size: 14px;
+	width: 100%;
+}
+
+#contact_form textarea{
+	width: 400px;
+	height: 120px;
+}
+
+#contact_form input[type=submit]{
+	border-style: none;
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #8ab419;
+	color: white;
+	padding: 7px;
 }
 
 #menubar {
@@ -136,7 +192,7 @@ address{
 
 #navbar {
 	font-weight: bold;
-	font-size: 12px;
+	font-size: 13px;
 	color: #afa391;
 	margin-top: 10px;
 	margin-bottom: 20px;
@@ -152,11 +208,11 @@ address{
 
 #navbar a{
 	text-decoration: none;
-	color: #6e9fce;
+	color: #8bc25d;
 }
 
 #navbar a:hover{
-	color: #1923da;
+	color: #506538;
 	text-decoration: underline;
 }
 
@@ -164,20 +220,21 @@ address{
 	width: 20px;
 	height: 20px;
 	position: relative;
-	bottom: 6px;
+	bottom: -4px;
+	top: 3px;
 }
 
 #lien_collections {
 	display: inline-block;
-	width: 200px;
 	float: left;
-	font-family: 'JamesFajardoRegular';
-	font-size: 40px;
+	font-size: 19px;
 	text-decoration: none;
 	color: #ffffff;
 	background-repeat: no-repeat;
-	margin-top: 24px;
-	margin-left: 40px;
+	margin-top: 32px;
+	margin-left: 30px;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 #navigation {
@@ -195,7 +252,6 @@ address{
 }
 
 #navigation li a:hover{
-	text-decoration: underline;
 }
 
 
@@ -244,9 +300,7 @@ address{
 	position: relative;
 }
 
-#footer a{
-	
-	color: #707173;
+#footer a{	
 	font-weight: normal;
 	font-style: normal;
 }
@@ -261,9 +315,10 @@ address{
 }
 
 #footer ul.bulls{
-	list-style-type: circle;
+	list-style-type: none;
 	list-style-position: inside;
-	color: #707173;
+	color: #5e5e5e;
+	padding-left: 4px;
 }
 
 #footer ul li ul{
@@ -283,6 +338,7 @@ address{
 	margin-top: 10px;
 	margin-bottom: 10px;
 	font-weight: bold;
+	color: #202020;
 }
 
 .footlinks > h4 {
@@ -293,6 +349,15 @@ address{
 .footlinks > ul {
 	margin-bottom: 5px;
 }
+
+.footlinks > ul > li > a {
+	color: #404040;
+}
+
+.bulls > li > a {
+	color: #6d6d6d;
+}
+
 
 #w3c{
 	position: absolute;
@@ -306,6 +371,7 @@ address{
 	background-color: #f6f6f6;
 	padding: 20px;
 	width: 190px;
+	border: 1px solid #d4d4d4;
 }
 
 
@@ -321,7 +387,14 @@ address{
 .tel{
 	font-weight: bold;
 	font-size: 19px;
-	color: #bc0c26;
+	color: #333;
+}
+
+#email{
+	font-size: 16px;
+	margin-top: 10px;
+	display: inline-block;
+	font-weight: bold;
 }
 
 /* @end */
@@ -390,8 +463,9 @@ http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
 
 
 .listed_in{
-	font-weight: bold;
 	color: #a9a9a9;
+	font-style: italic;
+	font-weight: bold;
 }
 
 
@@ -446,29 +520,33 @@ div.sous-cat h4{
 
 table.attributes{
 	border-collapse: collapse;
-	border: 1px;
 	font-size: 14px;
 }
 
+.attributes tr{
+	border-bottom : 1px solid #5e5e5e;
+}
+
+
 .attributes th,
 .attributes td{
-	border: 1px solid #616161;
-	padding: 5px;
+	padding: 10px;
 }
 
 .attributes th{
 	text-align: left;
-	font-weight: normal;
-	padding-right: 20px;
-	background-color: #d9d9d9;
-	font-style: normal;
+	padding-right: 30px;
+	font-weight: bold;
+	padding-left: 10px;
 }
 
-.attributes{
-	
+.attributes td{
+	padding-right: 10px;
 }
 
-
+.attributes tr:last-child{
+	border-bottom-style: none;
+}
 
 /* @end */
 
