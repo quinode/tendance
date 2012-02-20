@@ -55,7 +55,7 @@
 
     {% for cat in child_categories %}
         {% if cat.parent.slug|contains:'collections-' %}
-            <div class="grid_2 sous-cat">
+            <div class="grid_3 sous-cat">
                 <h4>{{cat.translated_name}}</h4>
                 {% thumbnail cat.main_image.picture 200 as image %}
                 <a href="{{ cat.get_absolute_url }}">
@@ -72,7 +72,7 @@
 
     {% if child_categories %}
             {% for cat in child_categories %}
-            <div class="grid_2 sous-cat">
+            <div class="grid_3 sous-cat">
                 <h4>{{cat.translated_name}}</h4>
                 {% thumbnail cat.main_image.picture 200 as image %}
                 <a href="{{ cat.get_absolute_url }}">

@@ -489,12 +489,19 @@ http://www.jakpsatweb.cz/css/css-vertical-center-solution.html
 
 div.sous-cat{
 	position: relative;
-	margin-left: 15px;
-	width: 200px;
+	margin-left: 7px;
 	overflow: hidden;
-	height: 280px;
 	margin-bottom: 25px;
+	margin-right: 7px;
 }
+
+div.sous-cat:first-child,
+div.sous-cat:nth-child(5),
+div.sous-cat:nth-child(9){
+	margin-left: 18px;
+}
+
+
 
 div.sous-cat.bl-hover h4{
 	color: #bc0c26;
