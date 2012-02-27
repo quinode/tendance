@@ -9,6 +9,7 @@
 ###############
 logs
 static_collected
+static/photos/
 
 # Specific files #
 ##################

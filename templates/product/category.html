@@ -38,9 +38,9 @@
 
 
     {% if category.main_image %}
-        {% thumbnail category.main_image.picture 350 as image %}
-        <img align="left" src="{{ image }}" 
-            width="{{ image.width }}" height="{{ image.height }}" 
+        <img align="left" src="{{media_url}}/{{ category.main_image.picture }}" 
+            width="{{ category.main_image.picture.width }}" 
+            height="{{ category.main_image.picture.height }}" 
             style="padding-right:20px"
             alt="{{ category.name }}"/>
     {% endif %}
