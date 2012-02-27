@@ -46,11 +46,10 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
     
 </div>
 
-<div class="grid_4 blanc">
+<div class="grid_7 blanc">
     <p>{{ product.description|safe }}</p>
-</div>
 
-<div class="grid_3 blanc">
+<br/>
     <table class="attributes" cellspacing="0" cellpadding="0" border="1">
     {% with product.translated_attributes as atts %}
         {% if atts %}

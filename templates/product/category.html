@@ -38,7 +38,7 @@
 
 
     {% if category.main_image %}
-        {% thumbnail category.main_image.picture 350 as catlogo %}
+        {% thumbnail category.main_image.picture "350" as catlogo %}
         <img align="left" src="{{ catlogo }}" 
             width="{{ catlogo.width }}" 
             height="{{ catlogo.height }}" style="padding-right:20px"
@@ -77,7 +77,6 @@
             {% for cat in child_categories %}
             <div class="grid_3 sous-cat">
                 <h4>{{cat.translated_name}}</h4>
-                {% thumbnail cat.main_image.picture 200 as image %}
                 <a href="{{ cat.get_absolute_url }}">
                     <img src="{{media_url}}/{{ cat.main_image.picture }}" 
                         width="{{ cat.main_image.picture.width }}" 
