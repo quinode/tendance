@@ -36,17 +36,20 @@
     </ul>   
     {% endblock %}
 
-{% if logo %}
-<img align="left" src="{{media_url}}/{{ logo }}" 
-    width="{{ logo.width }}" 
-    height="{{ logo.height }}" style="padding-right:20px"
-    alt="{{ category.name }}"/>
-{% endif %}
 
-<h3>{{ category.name }}</h3>
-{% if category.description %}
-    <p class="product_category_description">{{ category.description|safe}}</p>
-{% endif %}
+    {% if category.main_image %}
+        {% thumbnail category.main_image.picture 350 as catlogo %}
+        <img align="left" src="{{ catlogo }}" 
+            width="{{ catlogo.width }}" 
+            height="{{ catlogo.height }}" style="padding-right:20px"
+            alt="{{ category.name }}"/>
+    {% endif %}
+
+    <h3>{{ category.name }}</h3>
+    {% if category.description %}
+        <p class="product_category_description">{{ category.description|safe}}</p>
+    {% endif %}
+
 </div>
 
 <div id="product_category">
