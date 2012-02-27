@@ -101,6 +101,7 @@ class CategoryAdmin(CategoryOptions):
     list_display = ('name', '_parents_repr', 'is_active')
     list_display_links = ('name',)
     ordering = ['parent__id', 'ordering']
+    search_fields = ['name','slug']
 #    list_filter = (Catlevel,)
     
     filter_horizontal = ('related_categories',)

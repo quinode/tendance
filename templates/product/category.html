@@ -38,12 +38,13 @@
 
 
     {% if category.main_image %}
-        {% thumbnail category.main_image.picture "350" as catlogo %}
-        <img align="left" src="{{ catlogo }}" 
-            width="{{ catlogo.width }}" 
-            height="{{ catlogo.height }}" style="padding-right:20px"
+        {% thumbnail category.main_image.picture 350 as image %}
+        <img align="left" src="{{ image }}" 
+            width="{{ image.width }}" height="{{ image.height }}" 
+            style="padding-right:20px"
             alt="{{ category.name }}"/>
     {% endif %}
+    
 
     <h3>{{ category.name }}</h3>
     {% if category.description %}

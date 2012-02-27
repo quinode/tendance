@@ -73,6 +73,46 @@ ProductVariations or CustomProducts, look for product/detail_xxx.html
 </div>
 
 <div class="grid_12 blanc">
-<br/><br/>
+<br/>
+
+{% if product.related_items %}
+
+
+{% for related in product.related_items.all %} 
+    {% if forloop.first %} <ul>  {% endif %}
+        <li class="grid_4"><div class="product_listing">
+            
+            <div class="product_wrapper">
+            
+            {% thumbnail related.main_image.picture 85x85 as image %}
+            <a href="{{ related.get_absolute_url }}">
+            <img src="{{ image }}" alt="{{ related.translated_name }}" /></a>
+            <span class="minidesc">
+            
+                <a href="{{ related.get_absolute_url }}">{{ related.translated_name }}</a>
+                <br/>
+                {% if related.category %}<span class="listed_in">
+                    {% for cat in related.category.all %}
+                    {{ cat.name }}{% if not forloop.last %} - {% endif %}
+                    {% endfor %}
+                    </span><br/>
+                {% endif %}
+                {% for attr in related.productattribute_set.all %}
+                {% if attr.name == 'matiere' or attr.name == 'dimensions' %}
+                {{ attr.value }}<br/>
+                {% endif %}
+                {% endfor %}
+        </span>
+        </div>
+        </div></li>
+    {% if forloop.last %} </ul> {% endif %}
+{% endfor %}
+
+
+
+
+
+{% endif %}
+<br/>
 </div>
 {% endblock %}
