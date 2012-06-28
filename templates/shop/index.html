@@ -7,22 +7,22 @@
 
 {% block javascript %}
 <script type="text/javascript">
-$(function(){  
+$(function(){
     $("#diaporama").tabs({  fx:{opacity: "toggle"},
-                            event: "mouseover"}).tabs("rotate", 5000, true);  
+                            event: "mouseover"}).tabs("rotate", 5000, true);
 
-    $("#diaporama").hover(  
+    $("#diaporama").hover(
         function() {
-            $("#diaporama").tabs("rotate",0,true);  
-            },  
-        function() {  
-            $("#diaporama").tabs("rotate",5000,true);  
-            }  
+            $("#diaporama").tabs("rotate",0,true);
+            },
+        function() {
+            $("#diaporama").tabs("rotate",5000,true);
+            }
     );
     $("#collections > li a").click(function(){
         window.location = $(this).attr('rel');
     });
-    
+
     /*$("#collections > li").hover(
         function() {
             $(this).addClass('ui-state-hover');
@@ -44,48 +44,48 @@ $(function(){
 {% block content %}
 <div class="grid_9 blanc">
 
-<div id="diaporama" >  
-    <ul class="ui-tabs-nav gamme" id="collections">  
+<div id="diaporama" >
+    <ul class="ui-tabs-nav gamme" id="collections">
 
         {% for cat in int_cats %}
         <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-{{ cat.id }}">
         <a href="#fragment-{{ cat.id }}" rel="{{ cat.get_absolute_url }}">{{ cat.name }}</a>
         </li>
         {% endfor %}
-        
+
         <br/><br/>
-        
+
         {% for cat in ext_cats %}
         <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-{{ cat.id }}">
         <a href="#fragment-{{ cat.id }}" rel="{{ cat.get_absolute_url }}">{{ cat.name }}</a>
         </li>
         {% endfor %}
 
-    </ul>  
-    
+    </ul>
+
     <div id="cadrediapo">
         {% for cat in int_cats %}
-        <div id="fragment-{{cat.id}}" class="ui-tabs-panel" style="">  
-            <img src="{{media_url}}/{{ cat.main_image.picture }}" alt="" />  
-            <div class="info" >  
-            <h2><a href="{{ cat.get_absolute_url }}" >Découvrez la gamme {{cat.name}}</a></h2>  
-            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description|safe}}</a></p>  
-            </div>  
-        </div>  
+        <div id="fragment-{{cat.id}}" class="ui-tabs-panel" style="">
+            <img src="{{media_url}}/{{ cat.main_image.picture }}" alt="" />
+            <div class="info" >
+            <h2><a href="{{ cat.get_absolute_url }}" >Découvrez la gamme {{cat.name}}</a></h2>
+            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description|safe}}</a></p>
+            </div>
+        </div>
         {% endfor %}
         {% for cat in ext_cats %}
-        <div id="fragment-{{cat.id}}" class="ui-tabs-panel" style="">  
-            <img src="{{media_url}}/{{ cat.main_image.picture }}" alt="" />  
-            <div class="info" >  
-            <h2><a href="{{ cat.get_absolute_url }}" >Découvrez la gamme {{cat.name}}</a></h2>  
-            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description|safe }}</a></p>  
-            </div>  
-        </div>  
+        <div id="fragment-{{cat.id}}" class="ui-tabs-panel" style="">
+            <img src="{{media_url}}/{{ cat.main_image.picture }}" alt="" />
+            <div class="info" >
+            <h2><a href="{{ cat.get_absolute_url }}" >Découvrez la gamme {{cat.name}}</a></h2>
+            <p><a href="{{ cat.get_absolute_url }}" >{{cat.description|safe }}</a></p>
+            </div>
+        </div>
         {% endfor %}
-        
+
 
     </div>
-</div>  
+</div>
 </div>
 
 {% endblock %}
@@ -95,9 +95,9 @@ $(function(){
 <div class="grid_3 blanc">
 
     <div id="colonne">
-    
-        <div id="pub"><a href="/static/pub/coupon_PO_2012.jpg" target="_blank"><img src="/static/pub/pubWeb_TG_PO_062012_anim.gif" border="0"></a></div>
-    
+
+        <div id="pub"><a href="/static/pub/coupon_PO_2012.jpg" target="_blank"><img src="/static/pub/pubWeb_TG_rentree2012_anim.gif" border="0"></a></div>
+
 
     </div>
 
