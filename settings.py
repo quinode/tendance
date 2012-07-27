@@ -81,7 +81,7 @@ TEMPLATE_CONTEXT_PROCESSORS = ('satchmo_store.shop.context_processors.settings',
                                #'satchmo_ext.recentlist.context_processors.recent_products',
                                'tendance.context_processors.footer',
                                )
-                           
+
 
 ROOT_URLCONF = 'urls'
 
@@ -151,6 +151,7 @@ INSTALLED_APPS = (
     'django_extensions',
     'tinymce',
     'south',
+    'singleton_models',
 )
 
 AUTHENTICATION_BACKENDS = (
@@ -159,7 +160,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 TINYMCE_DEFAULT_CONFIG = {
-    'theme':"advanced", 
+    'theme':"advanced",
     'relative_urls': False,
     'theme_advanced_toolbar_location' : 'top',
     'theme_advanced_buttons1':'bold,italic,|,justifyleft,justifycenter,justifyright,|,bullist,numlist,|,link,unlink',
@@ -179,7 +180,7 @@ SATCHMO_SETTINGS = {
     'PRODUCT_SLUG': 'produit',
     'CATEGORY_SLUG': 'categorie',
     'MEASUREMENT_SYSTEM': 'metric',
-    
+
 }
 
 L10N_SETTINGS = {
@@ -203,7 +204,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 SATCHMO_DIRNAME = DIRNAME
-    
+
 gettext_noop = lambda s:s
 
 LANGUAGE_CODE = 'fr-FR'
@@ -232,7 +233,7 @@ ACCOUNT_ACTIVATION_DAYS = 7
 #                     datefmt='%a, %d %b %Y %H:%M:%S',
 #                     filename=os.path.join(DIRNAME,LOGFILE),
 #                     filemode='w')
-# 
+#
 # logging.getLogger('keyedcache').setLevel(logging.INFO)
 # logging.getLogger('l10n').setLevel(logging.INFO)
 # logging.info("Satchmo Started")

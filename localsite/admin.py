@@ -17,7 +17,7 @@ from django import forms
 class SortedQueryset:
     def __init__(self, qs):
         self.qs = qs
-        
+
     def all(self):
         #Permet de trier les catégories par le chemin complet (parents inclus)
         items = list(self.qs.all())
@@ -33,8 +33,8 @@ class SortedQueryset:
 
 ## Pour django 1.4
 # from tendance.utils import SimpleListFilter
-# 
-# 
+#
+#
 # class Catlevel(SimpleListFilter):
 #     title = _('Catégorie niveau 1')
 #     parameter_name = 'parent'
@@ -49,14 +49,16 @@ class MatiereAdmin(admin.ModelAdmin):
     filter_horizontal = ('product',)
 admin.site.register(Matiere, MatiereAdmin)
 
+
 class FabricantAdmin(admin.ModelAdmin):
     filter_horizontal = ('product',)
 admin.site.register(Fabricant, FabricantAdmin)
-  
+
 
 class MatiereInline(admin.TabularInline):
     model = Matiere.product.through
     extra = 1
+
 
 class FabricantInline(admin.TabularInline):
     model = Fabricant.product.through
@@ -68,30 +70,34 @@ class ProductAdminForm(forms.ModelForm):
         queryset=SortedQueryset(Category.objects),
         widget=FilteredSelectMultiple('category', False)
     )
-    description = forms.CharField(widget=AdminTinyMCE(attrs={'cols':80,'rows':20}))
+    description = forms.CharField(widget=AdminTinyMCE(attrs={'cols': 80,'rows': 20}))
+
     class Meta:
         model = Product
 
+
 class ProductAdmin(ProductOptions):
     form = ProductAdminForm
-    list_display = ('main_category','name','active','featured',)
+    list_display = ('main_category', 'name', 'active', 'featured',)
     list_display_links = ('name',)
-    list_filter = ('category', 'date_added','active','featured')
+    list_filter = ('category', 'date_added', 'active', 'featured')
     inlines = [MatiereInline, FabricantInline, ProductAttribute_Inline, ProductImage_Inline]
     fieldsets = (
-            (None, {'fields': ('site','category', 'name', 'description', 'short_description','active', 'featured','ordering')}), 
+            (None, {'fields': ('site', 'category', 'name', 'description', 'short_description', 'active', 'featured', 'ordering')}),
             (_('Meta Data'), {'fields': ('meta',), 'classes': ('collapse',)}),
-            (_('Related Products'), {'fields':('related_items',)}), 
+            (_('Related Products'), {'fields': ('related_items',)}),
             )
-    filter_horizontal = ('category','related_items')
+    filter_horizontal = ('category', 'related_items')
     ordering = ['category', 'ordering']
-            
+
 
 admin.site.unregister(Product)
 admin.site.register(Product, ProductAdmin)
 
+
 class CategoryAdminForm(forms.ModelForm):
-    description = forms.CharField(widget=AdminTinyMCE(attrs={'cols':80,'rows':20}))
+    description = forms.CharField(widget=AdminTinyMCE(attrs={'cols': 80, 'rows': 20}))
+
     class Meta:
         model = Category
 
@@ -101,11 +107,11 @@ class CategoryAdmin(CategoryOptions):
     list_display = ('name', '_parents_repr', 'is_active')
     list_display_links = ('name',)
     ordering = ['parent__id', 'ordering']
-    search_fields = ['name','slug']
+    search_fields = ['name', 'slug']
 #    list_filter = (Catlevel,)
-    
+
     filter_horizontal = ('related_categories',)
-    
+
     def mark_active(self, request, queryset):
         queryset.update(is_active=True)
         return HttpResponseRedirect('')
@@ -113,9 +119,15 @@ class CategoryAdmin(CategoryOptions):
     def mark_inactive(self, request, queryset):
         queryset.update(is_active=False)
         return HttpResponseRedirect('')
-        
-    mark_active.short_description = u"Activer les catégories sélectionnées"  
-    mark_inactive.short_description = u"Désactiver les catégories sélectionnées" 
+
+    mark_active.short_description = u"Activer les catégories sélectionnées"
+    mark_inactive.short_description = u"Désactiver les catégories sélectionnées"
 
 admin.site.unregister(Category)
 admin.site.register(Category, CategoryAdmin)
+
+
+from singleton_models.admin import SingletonModelAdmin
+from models import PubAccueil
+
+admin.site.register(PubAccueil, SingletonModelAdmin)

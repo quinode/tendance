@@ -43,6 +43,7 @@ class Fabricant(models.Model):
 
 class PubAccueil(SingletonModel):
     logo = models.ImageField(upload_to='pub/')
+    link = models.CharField('lien', blank=True, max_length=250, help_text='optionnel')
 
     # def __unicode__(self):
     #     return
